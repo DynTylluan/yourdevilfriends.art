@@ -1,2 +1,2 @@
 # yourdevilfriends.art
-Personal website.
+A personal website featuring art and rambling.
