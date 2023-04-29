@@ -1,0 +1,18 @@
+{{ define "main" }}
+    {{ range .Pages }}
+    <article>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <h4><time>{{ .Date.Format "Jan 2, 2006" }}</time></h4>
+        <p>{{ .Description }}</p>
+        <h4>
+            {{- with .Params.tags -}}
+                {{- if ge (len .) 1 -}}
+                    {{- range. -}}
+                        <a style="margin: auto 5px;" href="{{ $.Site.BaseURL }}tags/{{ . | urlize}}/">#{{ . }}</a>
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+        </h4>
+    </article>
+    {{ end }}
+{{ end }}
