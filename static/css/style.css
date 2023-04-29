@@ -1,4 +1,4 @@
-html { cursor: url(/cursor.cur), auto;}
+html { cursor: url(/cursor.cur), auto; min-height: 100%;}
 
 body {
     font-family: sans-serif;
