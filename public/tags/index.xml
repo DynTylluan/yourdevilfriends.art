@@ -2,35 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Den of devils</title>
-    <link>http://example.org/tags/</link>
+    <link>https://yourdevilfriends.art/tags/</link>
     <description>Recent content in Tags on Den of devils</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yourdevilfriends.art/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>accessibility</title>
-      <link>http://example.org/tags/accessibility/</link>
+      <link>https://yourdevilfriends.art/tags/accessibility/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/accessibility/</guid>
+      <guid>https://yourdevilfriends.art/tags/accessibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>http://example.org/tags/tutorial/</link>
+      <link>https://yourdevilfriends.art/tags/tutorial/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/tutorial/</guid>
+      <guid>https://yourdevilfriends.art/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web development</title>
-      <link>http://example.org/tags/web-development/</link>
+      <link>https://yourdevilfriends.art/tags/web-development/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/web-development/</guid>
+      <guid>https://yourdevilfriends.art/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2023</title>
+      <link>https://yourdevilfriends.art/tags/2023/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yourdevilfriends.art/tags/2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>digital art</title>
+      <link>https://yourdevilfriends.art/tags/digital-art/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yourdevilfriends.art/tags/digital-art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hazbin Hotel</title>
+      <link>https://yourdevilfriends.art/tags/hazbin-hotel/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yourdevilfriends.art/tags/hazbin-hotel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D&amp;D</title>
+      <link>https://yourdevilfriends.art/tags/dd/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yourdevilfriends.art/tags/dd/</guid>
       <description></description>
     </item>
     
