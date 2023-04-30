@@ -2,7 +2,7 @@ html { cursor: url(/cursor.cur), auto; min-height: 100%;}
 
 body {
     font-family: sans-serif;
-    font-size: .9rem;
+    font-size:  1rem;
     color: #fff;
     background-image: url(/images/backgrounds/space.gif);
     background-attachment: fixed;
@@ -70,7 +70,6 @@ nav {
     background-color: #24050b;
     border: 4px double #ed1a7d;
     max-width: 100%;
-    font-size: .8rem;
     overflow: auto;
     height: 190px;
     text-align: left;

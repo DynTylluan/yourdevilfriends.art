@@ -6,7 +6,7 @@ tags:
     - digital art
     - Hazbin Hotel
 featured_image: "https://images2.imgbox.com/8f/a5/5qzPedfq_o.png"
-description: "Pretty crude, eh?"
+description: "Final version and 2 alternate versions."
 ---
 
 ## Bigger smile

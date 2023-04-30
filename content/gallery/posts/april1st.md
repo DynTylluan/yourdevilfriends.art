@@ -6,7 +6,6 @@ tags:
     - digital art
     - Hazbin Hotel
 featured_image: "https://images2.imgbox.com/52/27/dinKJAHA_o.png"
-description: "A doodle for April 1st."
 ---
 
 ## April 1st
