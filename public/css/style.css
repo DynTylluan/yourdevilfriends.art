@@ -115,6 +115,10 @@ article img {
     margin: auto;
 }
 
+.graphics img {
+    display: inline-block;
+}
+
 .pagination {
     display: flex;
     list-style: none;
