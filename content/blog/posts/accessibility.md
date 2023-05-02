@@ -5,6 +5,7 @@ tags:
  - web development
  - accessibility
  - tutorial
+ - site resources
 description: "A few things I learned while making websites in an accessible way."
 ---
 
@@ -81,8 +82,6 @@ For this image, we decided to use a detail of a painting by Bosch. Here is the a
 "Detail of Hieronymus Bosch's The Temptation of Saint Anthony. It features and anthropomorphic bird-like creature holding a letter in its beak."
 
 Take special care regarding decorative images and image-heavy galleries. If an image is meant as a decoration, one or two words might be enough, while image-heavy galleries should have brief descriptions. This is because screen readers will take ages to read out a page while focusing on the wrong things.
-
-Additionally, the title attribute must not be the same as the alt text. This is because screen readers read both, and would make for an annoying browsing experience.
 
 Additionally, the title attribute must not be the same as the alt text. This is because screen readers read both, and would make for an annoying browsing experience.
 
