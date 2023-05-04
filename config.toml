@@ -1,8 +1,0 @@
-baseURL = 'https://yourdevilfriends.art/'
-languageCode = 'en-us'
-title = 'Den of devils'
-paginate = 3
-
-[taxonomies]
-  featured_image = "featured_image"
-  tag = "tags"
