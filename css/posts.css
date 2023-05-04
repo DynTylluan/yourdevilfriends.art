@@ -1,0 +1,54 @@
+body {
+    background-color: #feb364;
+    color: #4a1a36;
+}
+
+a {
+    color: #122570;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: .8rem;
+}
+
+q {
+    width: 350px;
+    margin: 10px auto;
+    font-style: italic;
+    display: block;
+}
+
+q::before {
+    content: '«';
+}
+
+q::after {
+    content: '»';
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+pre {
+    background-color: #4a1a36;
+    color: #feb364;
+    padding: 15px;
+    overflow: auto;
+}
+
+.emoji {
+    width: 1rem;
+    display: inline-block;
+}
