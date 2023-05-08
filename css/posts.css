@@ -1,10 +1,10 @@
 body {
-    background-color: #feb364;
-    color: #4a1a36;
+    background-color: #fff8dc;
+    color: #333;
 }
 
 a {
-    color: #122570;
+    color: #0000cd;
 }
 
 main {
@@ -42,8 +42,8 @@ img {
 }
 
 pre {
-    background-color: #4a1a36;
-    color: #feb364;
+    background-color: #333;
+    color: #b2ec5d;
     padding: 15px;
     overflow: auto;
 }
