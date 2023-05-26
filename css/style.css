@@ -1,34 +1,26 @@
+/*BASICS*/
+
 html {
-    cursor: url(/cursor.cur), auto;
-    min-height: 100%;
+    background-image: url(/images/backgrounds/spirals.gif);
+    background-attachment: fixed;
 }
 
 body {
-    font-size: .9rem;
+    width: 900px;
+    margin: auto;
+    color: #000;
     font-family: sans-serif;
-    word-spacing: 2px;
+    font-size: 1rem;
     position: relative;
 }
 
 a {
-    font-size: .9rem;
-    font-family: sans-serif;
-    word-spacing: 3px;
+    color: #ff0000;
     text-decoration: underline;
 }
 
 a:hover {
     text-decoration: none;
-    cursor: url(/pointer.cur), pointer;
-}
-
-h1, h2,h3, h4, h5, h6 {
-    margin-top: 5px;
-    margin-bottom: 5x;
-}
-
-ul {
-    list-style: square;
 }
 
 img {
@@ -36,6 +28,226 @@ img {
     max-height: 100%;
 }
 
-button:hover {
-    cursor: url(/pointer.cur), pointer;
+/*HEADER & NAVIGATION*/
+
+header {
+    max-width: 100%;
+    height: 150px;
+    text-align: center;
+    text-shadow: 1px -1px #fff, -1px 1px #fff;
+    background-image: url(/images/backgrounds/header.png);
+    background-position: center;
+    border: 3px outset #906639;
+    font-family: courier;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-radius: 25px 25px 0 0;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ff0000;
+    font-style: italic;
+}
+
+nav {
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav button {
+    font-family: courier;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 1px  #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-size: cover;
+    border: 3px outset #906639;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown div {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown div a {
+    color: #fff;
+    background-color: #333;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown div a:hover {
+    color: #ff0000;
+    background-color: #000;
+}
+
+.dropdown:hover div {
+    display: block;
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    border: 3px outset #906639;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: .8rem;
+    border-radius: 0 0 25px 25px;
+    padding-bottom: 15px;
+}
+
+/*MAIN CONTENT; INDEX*/
+
+#index {
+    height: 920px;
+}
+
+#welcome {
+    width: 580px;
+    margin-right: 20px;
+    float: left;
+    font-family: courier;
+}
+
+#welcome div {
+    max-width: 100%;
+    border: 3px outset #906639;
+    font-family: sans-serif;
+    padding: 15px;
+    background-color: #fff;
+}
+
+#webrings {
+    width: 300px;
+    float: left;
+    text-align: center;
+}
+
+#tmring {
+    margin-bottom: 20px;
+    min-width: 270px;
+}
+
+#stamps {
+    text-align: center;
+    overflow: hidden;
+    height: 120px;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#notebook {
+    border: 1px solid #906639;
+    background-color: #fff;
+    width: 240px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#notebook header {
+    background-image: url(/images/backgrounds/notebooktop.gif);
+    background-size: cover;
+    height: 67px;
+    border: none;
+    border-radius: 0;
+}
+
+#notebook div {
+    max-width: 100%;
+    overflow: auto;
+    padding: 10px;
+    height: 148px;
+    text-align: center;
+}
+
+#notebook footer {
+    background-image: url(/images/backgrounds/notebookbottom.gif);
+    background-size: cover;
+    height: 112px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#disclaimers {
+    width: 638px;
+    text-align: right;
+    float: left;
+    font-family: courier;
+}
+
+#disclaimers div {
+    max-width: 100%;
+    border: 3px outset #906639;
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+/*MAIN CONTENT; ARTICLES*/
+
+article {
+    max-width: 100%;
+    border: 3px outset #906639;
+    padding: 15px;
+    background-color: #fff;
+}
+
+article q {
+    width: 500px;
+    margin: 10px auto;
+    font-style: italic;
+    display: block;
+}
+
+article q::before {
+    content: '«';
+}
+
+article q::after {
+    content: '»';
+}
+
+article img {
+    display: block;
+    margin: auto;
+}
+
+article pre {
+    background-color: #333;
+    color: #b2ec5d;
+    padding: 15px;
+    overflow: auto;
+}
+
+.emoji {
+    width: 1rem;
+    display: inline-block;
 }
