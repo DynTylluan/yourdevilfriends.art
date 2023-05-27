@@ -28,6 +28,15 @@ img {
     max-height: 100%;
 }
 
+#back {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+}
+
 /*HEADER & NAVIGATION*/
 
 header {
@@ -209,6 +218,83 @@ footer {
     background-color: #fff;
     text-align: left;
     font-family: sans-serif;
+}
+
+/*MAIN CONTENT; ABOUT*/
+
+#about {
+    height: 773px;
+    margin-bottom: 20px;
+}
+
+#picrew {
+    float: left;
+    border: 1px solid #000;
+    margin-right: 20px;
+    width: 230px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+#basics {
+    float: left;
+    border: 3px outset #906639;
+    padding: 10px 15px;
+    background-color: #fff;
+    height: 235px;
+    margin-bottom: 20px;
+    width: 580px;
+    overflow: hidden;
+}
+
+#buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#results {
+    height: 345px;
+    width: 580px;
+    padding: 15px;
+    float: left;
+    overflow: auto;
+    border: 3px outset #906639;
+    background-color: #fff;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#results div {
+    max-width: 46%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.uquiz {
+    background-color: #ebf5fb;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.uquiz strong{
+    color: #093c5d;
+    font-size: 1.5rem;
+}
+
+.uquiz a {
+    font-size: .8rem;
+    color: #093c5d;
+}
+
+#friends {
+    width: 260px;
+    float: left;
+    text-align: center;
 }
 
 /*MAIN CONTENT; ARTICLES*/
