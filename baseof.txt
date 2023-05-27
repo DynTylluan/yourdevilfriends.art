@@ -37,9 +37,8 @@
         </div>
     </nav>
     <!--MAIN CONTENT-->
-    <main id="not-found">
-        <img src="/images/decor/kaboom.gif" alt="Animation of a computer exploding reading «I'm really glad computers don't do this anymore»">
-        <h2>404 not found</h2>
+    <main>
+        
     </main>
     <!--FOOTER-->
     <footer>

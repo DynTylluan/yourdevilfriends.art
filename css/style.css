@@ -111,7 +111,6 @@ footer {
     text-align: center;
     border: 3px outset #906639;
     background-color: #fff;
-    margin-top: 10px;
     margin-bottom: 20px;
     font-size: .8rem;
     border-radius: 0 0 25px 25px;
@@ -166,6 +165,7 @@ footer {
     float: left;
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #notebook header {
@@ -217,6 +217,7 @@ article {
     max-width: 100%;
     border: 3px outset #906639;
     padding: 15px;
+    margin-bottom: 20px;
     background-color: #fff;
 }
 
@@ -250,4 +251,15 @@ article pre {
 .emoji {
     width: 1rem;
     display: inline-block;
+}
+
+/*MAIN CONTENT; 404*/
+
+#not-found {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#not-found img {
+    border: 1px solid #000;
 }
