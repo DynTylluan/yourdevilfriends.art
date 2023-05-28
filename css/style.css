@@ -339,6 +339,38 @@ article pre {
     display: inline-block;
 }
 
+/*MAIN CONTENT; FREEBIES*/
+
+#f2u {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 1050px;
+}
+
+#f2u section {
+    width: 250px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 3px outset #906639;
+    padding: 15px;
+    background-color: #fff;
+    float: left;
+    overflow: auto;
+}
+
+#terms {
+    width: 555px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 3px outset #906639;
+    padding: 15px;
+    background-color: #fff;
+    float: left;
+    overflow: auto;
+    text-align: left;
+}
+
 /*MAIN CONTENT; 404*/
 
 #not-found {
