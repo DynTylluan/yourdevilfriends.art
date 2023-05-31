@@ -69,10 +69,10 @@ nav img {
 }
 
 main {
-    margin-left: 230px;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    width: 85%;
+    margin-left: 250px;
+    top: 50px;
+    bottom: 50px;
+    width: 75%;
 }
 
 main img {
