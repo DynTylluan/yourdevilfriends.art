@@ -149,8 +149,10 @@ footer {
 
 #webrings {
     width: 300px;
+    height: 490px;
     float: left;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #tmring {
@@ -160,7 +162,6 @@ footer {
 
 #linuxring {
     margin-bottom: 20px;
-    height: 150px;
     background-color: #fff;
     border: 2px solid #000;
     border-radius: 20px;
