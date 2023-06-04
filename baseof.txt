@@ -17,7 +17,7 @@
             <div>
                 <a href="/about.html">About</a>
                 <a href="/art.html">Artwork</a>
-                <a href="/reads.html">Reading log</a>
+                <a href="/fursona.html">Fursona</a>
             </div>
         </div>
         <div class="dropdown">
@@ -31,8 +31,7 @@
         <div class="dropdown">
             <button style="background-image: url(/images/backgrounds/button3.png);">Et cetera</button>
             <div>
-            <a href="/buttons.html">Button wall</a>
-                <a href="/linkroll.html">Linkroll</a>
+                <a href="https://dungbeetle.neocities.org/" target="_blank">Linkroll</a>
                 <a href="https://yourdevilfriends.123guestbook.com/" target="_blank">Guestbook</a>
             </div>
         </div>
