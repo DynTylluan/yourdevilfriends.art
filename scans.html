@@ -3,71 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Scans</title>
-    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 </head>
 <body>
-    <!--NAVIGATION-->
+    <!--NAVIGATION SIDEBAR-->
     <nav>
-        <h1>Scans</h1>
-        <p>Stuff I scanned, mostly manga covers. Due to the reflective nature of some of the items, the colors aren't always 100% accurate, even after color correction.</p>
-        <div>
-            <a href="#pins"><button style="background-image: url(/images/backgrounds/pinsbutton.png);">Pins</button></a>
-            <a href="#covers"><button style="background-image: url(/images/backgrounds/coversbutton.png);">Covers</button></a>
+        <header></header>
+        <div id="sidebar">
+            <script type="text/javascript" src="/sidebar.js"></script>
         </div>
-        <h3><a href="/">Index</a></h3>
+        <footer></footer>
     </nav>
     <!--MAIN CONTENT-->
     <main>
-        <!--PINS-->
-        <h2 id="pins">Pins</h2>
-        <a href="/images/scans/pins/fatnuggets.png"><img src="/images/scans/pins/fatnuggets.png" alt="Summer Fat Nuggets pin"></a>
-        <a href="/images/scans/pins/angeldust4.png"><img src="/images/scans/pins/angeldust4.png" alt="Spring Angel Dust pin"></a>
-        <a href="/images/scans/pins/alastor4.png"><img src="/images/scans/pins/alastor4.png" alt="Spring Alastor pin"></a>
-        <a href="/images/scans/pins/alastor3.png"><img src="/images/scans/pins/alastor3.png" alt="Chibi Alastor pin"></a>
-        <a href="/images/scans/pins/angeldust3.png"><img src="/images/scans/pins/angeldust3.png" alt="Chibi Angel Dust pin"></a>
-        <a href="/images/scans/pins/angeldust2.png"><img src="/images/scans/pins/angeldust2.png" alt="Valentine's Angel Dust pin"></a>
-        <a href="/images/scans/pins/alastor2.png"><img src="/images/scans/pins/alastor2.png" alt="Valentine's Alastor pin"></a>
-        <a href="/images/scans/pins/angeldust1.png"><img src="/images/scans/pins/angeldust1.png" alt="Pilot Angel Dust pin"></a>
-        <a href="/images/scans/pins/alastor1.png"><img src="/images/scans/pins/alastor1.png" alt="Pilot Alastor pin"></a>
-        <!--MANGA COVERS-->
-        <h2 id="covers">Manga covers</h2>
-        <a href="/images/scans/covers/goodnight-punpun-7.jpg"><img src="/images/scans/covers/goodnight-punpun-7.jpg" alt="Goodnight Punpun #7 cover"></a>
-        <a href="/images/scans/covers/goodnight-punpun-6.jpg"><img src="/images/scans/covers/goodnight-punpun-6.jpg" alt="Goodnight Punpun #6 cover"></a>
-        <a href="/images/scans/covers/goodnight-punpun-5.jpg"><img src="/images/scans/covers/goodnight-punpun-5.jpg" alt="Goodnight Punpun #5 cover"></a>
-        <a href="/images/scans/covers/goodnight-punpun-4.jpg"><img src="/images/scans/covers/goodnight-punpun-4.jpg" alt="Goodnight Punpun #4 cover"></a>
-        <a href="/images/scans/covers/goodnight-punpun-3.jpg"><img src="/images/scans/covers/goodnight-punpun-3.jpg" alt="Goodnight Punpun #3 cover"></a>
-        <a href="/images/scans/covers/goodnight-punpun-2.jpg"><img src="/images/scans/covers/goodnight-punpun-2.jpg" alt="Goodnight Punpun #2 cover"></a>
-        <a href="/images/scans/covers/goodnight-punpun-1.jpg"><img src="/images/scans/covers/goodnight-punpun-1.jpg" alt="Goodnight Punpun #1 cover"></a>
-        <a href="/images/scans/covers/keroro-8.jpg"><img src="/images/scans/covers/keroro-8.jpg" alt="Keroro #8 cover"></a>
-        <a href="/images/scans/covers/keroro-7.jpg"><img src="/images/scans/covers/keroro-7.jpg" alt="Keroro #7 cover"></a>
-        <a href="/images/scans/covers/keroro-6.jpg"><img src="/images/scans/covers/keroro-6.jpg" alt="Keroro #6 cover"></a>
-        <a href="/images/scans/covers/keroro-5.jpg"><img src="/images/scans/covers/keroro-5.jpg" alt="Keroro #5 cover"></a>
-        <a href="/images/scans/covers/keroro-4.jpg"><img src="/images/scans/covers/keroro-4.jpg" alt="Keroro #4 cover"></a>
-        <a href="/images/scans/covers/keroro-3.jpg"><img src="/images/scans/covers/keroro-3.jpg" alt="Keroro #3 cover"></a>
-        <a href="/images/scans/covers/keroro-2.jpg"><img src="/images/scans/covers/keroro-2.jpg" alt="Keroro #2 cover"></a>
-        <a href="/images/scans/covers/keroro-1.jpg"><img src="/images/scans/covers/keroro-1.jpg" alt="Keroro #1 cover"></a>
-        <a href="/images/scans/covers/tekkonkinkreet-alt.jpg"><img src="/images/scans/covers/tekkonkinkreet-alt.jpg" alt="Tekkonkinkreet alternate cover"></a>
-        <a href="/images/scans/covers/tekkonkinkreet.jpg"><img src="/images/scans/covers/tekkonkinkreet.jpg" alt="Tekkonkinkreet cover"></a>
-        <a href="/images/scans/covers/splatoon-1.jpg"><img src="/images/scans/covers/splatoon-1.jpg" alt="Splatoon #1 cover"></a>
-        <a href="/images/scans/covers/soul-eater-1.jpg"><img src="/images/scans/covers/soul-eater-1.jpg" alt="Soul Eater #1 cover"></a>
-        <a href="/images/scans/covers/solitary-gourmet.jpg"><img src="/images/scans/covers/solitary-gourmet.jpg" alt="Solitary Gourmet cover"></a>
-        <a href="/images/scans/covers/legend-of-zelda-mm-alttp.jpg"><img src="/images/scans/covers/legend-of-zelda-mm-alttp.jpg" alt="Legend of Zelda Majora's Mask/A Link to the Past Legendary Edition cover"></a>
-        <a href="/images/scans/covers/pokémon-adventures-1.jpg"><img src="/images/scans/covers/pokémon-adventures-1.jpg" alt="Pokémon Adventures #1 cover"></a>
-        <a href="/images/scans/covers/gyo.jpg"><img src="/images/scans/covers/gyo.jpg" alt="Gyo cover"></a>
-        <a href="/images/scans/covers/gon-7.jpg"><img src="/images/scans/covers/gon-7.jpg" alt="Gon #7 cover"></a>
-        <a href="/images/scans/covers/gon-6.jpg"><img src="/images/scans/covers/gon-6.jpg" alt="Gon #6 cover"></a>
-        <a href="/images/scans/covers/gon-5.jpg"><img src="/images/scans/covers/gon-5.jpg" alt="Gon #5 cover"></a>
-        <a href="/images/scans/covers/gon-2.jpg"><img src="/images/scans/covers/gon-2.jpg" alt="Gon #2 cover"></a>
-        <a href="/images/scans/covers/dot-hack-4koma.jpg"><img src="/images/scans/covers/dot-hack-4koma.jpg" alt=".hack//4koma cover"></a>
-        <a href="/images/scans/covers/buddha.jpg"><img src="/images/scans/covers/buddha.jpg" alt="Buddha cover"></a>
-        <a href="/images/scans/covers/astro-boy-omnibus-4.jpg"><img src="/images/scans/covers/astro-boy-omnibus-4.jpg" alt="Astro Boy Omnibus #4 cover"></a>
-        <a href="/images/scans/covers/astro-boy-1.jpg"><img src="/images/scans/covers/astro-boy-1.jpg" alt="Astro Boy #1 cover"></a>
-        <a href="/images/scans/covers/zatchbell-1.jpg"><img src="/images/scans/covers/zatchbell-1.jpg" alt="Zatchbell #1 cover"></a>
-        <a href="/images/scans/covers/stargazing-dog.jpg"><img src="/images/scans/covers/stargazing-dog.jpg" alt="Stargazing Dog cover"></a>
-        <a href="/images/scans/covers/fragments-of-horror.jpg"><img src="/images/scans/covers/fragments-of-horror.jpg" alt="Fragments of Horror cover"></a>
-        <a href="/images/scans/covers/cat-partners-1.jpg"><img src="/images/scans/covers/cat-partners-1.jpg" alt="Cat Partners: Hachi & Maruru #1 cover"></a>
-        <a href="/images/scans/covers/doing-time.jpg"><img src="/images/scans/covers/doing-time.jpg" alt="Doing Time cover"></a>
+        <header>
+            <h1>Scans</h1>
+        </header>
+        <article>
+            <h2>Pins</h2>
+            <div ID="pins" data-nanogallery2='{
+                "itemsBaseURL": "https://yourdevilfriends.art/images/scans/pins/",
+                "thumbnailWidth": "100",
+                "thumbnailHeight": "100",
+                "thumbnailLabel": {
+                  "position": "overImageOnBottom",
+                  "descriptionMultiLine": true
+                },
+                "thumbnailAlignment": "center",
+                "thumbnailOpenImage": true
+              }'>
+              <a href="angeldust4.png" data-ngthumb="angeldust4.png" data-ngdesc="Cherry Blossom Angel Dust"></a>
+              <a href="alastor4.png" data-ngthumb="alastor4.png" data-ngdesc="Cherry Blossom Alastor"></a>
+              <a href="alastor3.png" data-ngthumb="alastor3.png" data-ngdesc="Chibi Neon Alastor"></a>
+              <a href="angeldust3.png" data-ngthumb="angeldust3.png" data-ngdesc="Chibi Angel Dust"></a>
+              <a href="fatnuggets.png" data-ngthumb="fatnuggets.png" data-ngdesc="Summer Fat Nuggets"></a>
+              <a href="angeldust2.png" data-ngthumb="angeldust2.png" data-ngdesc="Valentines Angel Dust"></a>
+              <a href="alastor2.png" data-ngthumb="alastor2.png" data-ngdesc="Valentines Alastor"></a>
+              <a href="alastor1.png" data-ngthumb="alastor1.png" data-ngdesc="Pilot Alastor"></a>
+              <a href="angeldust1.png" data-ngthumb="angeldust1.png" data-ngdesc="Pilot Angel Dust"></a>
+        
+            </div>
+            <h2>Covers</h2>
+            <div ID="covers" data-nanogallery2='{
+                "itemsBaseURL": "https://yourdevilfriends.art/images/scans/covers/",
+                "thumbnailWidth": "100",
+                "thumbnailHeight": "100",
+                "thumbnailLabel": {
+                  "position": "overImageOnBottom",
+                  "descriptionMultiLine": true
+                },
+                "thumbnailAlignment": "center",
+                "thumbnailOpenImage": true
+              }'>
+              <a href="goodnight-punpun-7.jpg" data-ngthumb="goodnight-punpun-7.jpg" data-ngdesc="Goodnight Punpun #7"></a>
+              <a href="goodnight-punpun-6.jpg" data-ngthumb="goodnight-punpun-6.jpg" data-ngdesc="Goodnight Punpun #6"></a>
+              <a href="goodnight-punpun-5.jpg" data-ngthumb="goodnight-punpun-5.jpg" data-ngdesc="Goodnight Punpun #5"></a>
+              <a href="goodnight-punpun-4.jpg" data-ngthumb="goodnight-punpun-4.jpg" data-ngdesc="Goodnight Punpun #4"></a>
+              <a href="goodnight-punpun-3.jpg" data-ngthumb="goodnight-punpun-3.jpg" data-ngdesc="Goodnight Punpun #3"></a>
+              <a href="goodnight-punpun-2.jpg" data-ngthumb="goodnight-punpun-2.jpg" data-ngdesc="Goodnight Punpun #2"></a>
+              <a href="goodnight-punpun-1.jpg" data-ngthumb="goodnight-punpun-1.jpg" data-ngdesc="Goodnight Punpun #1"></a>
+              <a href="gyo.jpg" data-ngthumb="gyo.jpg" data-ngdesc="Gyo"></a>
+              <a href="a-distant-neighborhood.jpg" data-ngthumb="a-distant-neighborhood.jpg" data-ngdesc="A Distant Neighborhood"></a>
+              <a href="buddha.jpg" data-ngthumb="buddha.jpg" data-ngdesc="Buddha"></a>
+              <a href="tekkonkinkreet-alt.jpg" data-ngthumb="tekkonkinkreet-alt.jpg" data-ngdesc="Tekkonkinkreet (alt.)"></a>
+              <a href="tekkonkinkreet.jpg" data-ngthumb="tekkonkinkreet.jpg" data-ngdesc="Tekkonkinkreet"></a>
+              <a href="astro-boy-omnibus-4.jpg" data-ngthumb="astro-boy-omnibus-4.jpg" data-ngdesc="Astro Boy Omnibus #4"></a>
+              <a href="solitary-gourmet.jpg" data-ngthumb="solitary-gourmet.jpg" data-ngdesc="Solitary Gourmet"></a>
+              <a href="dot-hack-4koma.jpg" data-ngthumb="dot-hack-4koma.jpg" data-ngdesc=".hack//4koma"></a>
+              <a href="pokémon-adventures-1.jpg" data-ngthumb="pokémon-adventures-1.jpg" data-ngdesc="Pokémon Adventures #1"></a>
+              <a href="splatoon-1.jpg" data-ngthumb="splatoon-1.jpg" data-ngdesc="Splatoon #1"></a>
+              <a href="fragments-of-horror.jpg" data-ngthumb="fragments-of-horror.jpg" data-ngdesc="Fragments of Horror"></a>
+              <a href="doing-time.jpg" data-ngthumb="doing-time.jpg" data-ngdesc="Doing Time"></a>
+              <a href="stargazing-dog.jpg" data-ngthumb="stargazing-dog.jpg" data-ngdesc="Stargazing Dog"></a>
+              <a href="astro-boy-1.jpg" data-ngthumb="astro-boy-1.jpg" data-ngdesc="Astro Boy #1"></a>
+              <a href="soul-eater-1.jpg" data-ngthumb="soul-eater-1.jpg" data-ngdesc="Soul Eater #1"></a>
+              <a href="legend-of-zelda-mm-alttp.jpg" data-ngthumb="legend-of-zelda-mm-alttp.jpg" data-ngdesc="Legend of Zelda: Majora's Mask & A Link to the Past"></a>
+              <a href="gon-7.jpg" data-ngthumb="gon-7.jpg" data-ngdesc="Gon #7"></a>
+              <a href="gon-6.jpg" data-ngthumb="gon-6.jpg" data-ngdesc="Gon #6"></a>
+              <a href="gon-5.jpg" data-ngthumb="gon-5.jpg" data-ngdesc="Gon #5"></a>
+              <a href="gon-2.jpg" data-ngthumb="gon-2.jpg" data-ngdesc="Gon #2"></a>
+              <a href="keroro-8.jpg" data-ngthumb="keroro-8.jpg" data-ngdesc="Keroro #8"></a>
+              <a href="keroro-7.jpg" data-ngthumb="keroro-7.jpg" data-ngdesc="Keroro #7"></a>
+              <a href="keroro-6.jpg" data-ngthumb="keroro-6.jpg" data-ngdesc="Keroro #6"></a>
+              <a href="keroro-5.jpg" data-ngthumb="keroro-5.jpg" data-ngdesc="Keroro #5"></a>
+              <a href="keroro-4.jpg" data-ngthumb="keroro-4.jpg" data-ngdesc="Keroro #4"></a>
+              <a href="keroro-3.jpg" data-ngthumb="keroro-3.jpg" data-ngdesc="Keroro #3"></a>
+              <a href="keroro-2.jpg" data-ngthumb="keroro-2.jpg" data-ngdesc="Keroro #2"></a>
+              <a href="keroro-1.jpg" data-ngthumb="keroro-1.jpg" data-ngdesc="Keroro #1"></a>
+              <a href="zatchbell-1.jpg" data-ngthumb="zatchbell-1.jpg" data-ngdesc="Zatchbell #1"></a>
+              <a href="cat-partners-1.jpg" data-ngthumb="cat-partners-1.jpg" data-ngdesc="Cat Partners #1"></a>
+            </div>
+        </article>
     </main>
 </body>
 </html>

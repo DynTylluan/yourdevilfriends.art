@@ -3,54 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!--HEADER & NAVIGATION-->
-    <header id="top">
-        <h1><a href="/">your · devil · friends</a></h1>
-    </header>
+    <!--NAVIGATION SIDEBAR-->
     <nav>
-        <div class="dropdown">
-            <button style="background-image: url(/images/backgrounds/button1.png);">Personal</button>
-            <div>
-                <a href="/about.html">About</a>
-                <a href="/art.html">Artwork</a>
-                <a href="/fursona.html">Fursona</a>
-            </div>
+        <header></header>
+        <div id="sidebar">
+            <script type="text/javascript" src="/sidebar.js"></script>
         </div>
-        <div class="dropdown">
-            <button style="background-image: url(/images/backgrounds/button2.png);">For you</button>
-            <div>
-                <a href="/accessibility.html">Web accessibility guide</a>
-                <a href="/freebies.html">F2U graphics</a>
-                <a href="/scans.html">Scans</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button style="background-image: url(/images/backgrounds/button3.png);">Et cetera</button>
-            <div>
-                <a href="https://dungbeetle.neocities.org/" target="_blank">Linkroll</a>
-                <a href="https://yourdevilfriends.123guestbook.com/" target="_blank">Guestbook</a>
-            </div>
-        </div>
+        <footer></footer>
     </nav>
     <!--MAIN CONTENT-->
     <main>
-        
+        <header>
+            <h1>Title</h1>
+        </header>
+        <article>
+            
+        </article>
     </main>
-    <!--FOOTER-->
-    <footer>
-        <a href="/freebies.html"><img src="/images/freebies/adopts/tattletail.gif" style="float: left; margin-top: 25px; margin-left: 100px;"></a>
-        <a href="/freebies.html"><img src="/images/freebies/adopts/tattletail.gif" style="float: right; margin-top: 25px; margin-right: 100px;"></a>
-        <p>yourdevilfriends was created by Bruno «devils» A.<br>
-        2023-whenever</p>
-        <img src="/images/decor/divider.gif"><img src="/images/decor/buttons/powered.gif" alt="Powered by pure evil"><img src="/images/decor/divider.gif">
-    </footer>
-    <!--BACK TO TOP-->
-    <button id="back">
-        <a href="#top"><img src="/images/decor/arrow.gif" alt="Back to top"></a>
-    </button>
+    <!--ASIDE-->
+    <aside>
+        
+    </aside>
 </body>
 </html>
