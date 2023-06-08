@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        #statuscafe {
+        padding: .5em;
+        background-color: azure;
+        border: 1px solid midnightblue;
+        max-width: 100%;
+        }
+        #statuscafe-username {
+            margin-bottom: .5em;
+        }
+        #statuscafe-content {
+            margin: 0 1em 0.5em 1em;
+        }
+    </style>
+</head>
+<body>
+    <!--NAVIGATION SIDEBAR-->
+    <nav>
+        <header></header>
+        <div id="sidebar">
+            <script type="text/javascript" src="/sidebar.js"></script>
+        </div>
+        <footer></footer>
+    </nav>
+    <!--MAIN CONTENT-->
+    <main>
+        <header>
+            <h1>Blog</h1>
+        </header>
+        <article>
+            <p>Ramblings of madmen. Sometimes only one of us writes a particular post, in which case that will be specified.</p>
+            <!--RANTS-->
+            <details>
+                <summary>Rants</summary>
+                <p>None ATM, whoops.</p>
+            </details>
+            <!--REVIEWS-->
+            <details>
+                <summary>Reviews</summary>
+                <ul>
+                    <li><a href="/blog/noodles.html">Reviews of instant noddles</a>; «My favorite page on yourdevilfriends.art is the one where devils go talk about instant noodles for way too long!» said no one ever.</li>
+                </ul>
+            </details>
+        </article>
+    </main>
+    <!--STATUS.CAFE-->
+    <aside>
+        <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=heckmaster" defer></script>
+    </aside>
+</body>
+</html>
