@@ -25,3 +25,7 @@ article section {
     border-style: dashed;
     border-width: 1px;
 }
+
+strong, em {
+    color: #009688;
+}

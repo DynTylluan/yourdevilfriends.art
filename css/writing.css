@@ -1,0 +1,26 @@
+/*Background*/
+
+body {
+    background-image: url(/images/backgrounds/pride.jpg);
+}
+
+/*Boxes*/
+
+article {
+    max-width: 100%;
+    border-style: double;
+    border-color: #a6e7ff;
+    background-image: url(/images/backgrounds/space.gif);
+    padding: 15px;
+}
+
+/*Text*/
+
+a {
+    color: #a6e7ff;
+}
+
+article h2::before {
+    margin-left: 5px;
+    content: '✎';
+}
