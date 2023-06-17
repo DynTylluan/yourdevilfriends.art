@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/universal.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Tips and tricks for Web accessibility</title>
+    <style>
+        .emoji {
+            width: 1rem;
+            display: inline-block;
+        }
+    
+        .flashing {
+            -webkit-filter: blur(5px); /* For Safari 6.0 - 9.0 */
+            filter: blur(5px);
+        }
+        
+        .flashing:hover {
+            -webkit-filter: none;
+            filter: none;
+        }
+        </style>
+    </head>
+</head>
+<body>
+    <main>
+        <header><img src="/images/headers/catputer.gif" alt="Header image"></header>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="/art.html">Art</a>
+            <a href="/writing.html">Writing</a>
+            <a href="/misc.html">Misc.</a>
+            <a href="/credits.html">Site credits</a>
+        </nav>
+        <article>
+            <h1>Tips and tricks for Web accessibility</h1>
+            <section>
+                <!--Intro & table of contents-->
+                <p>Whenever we browse personal websites, it's often we notice a lack of thought from their Webmasters when it comes to browsing the Web in a way different than their own.</p>
+                <p>Since we started creating websites, we ended up learning a lot about Web accessibility and why it matters. We very firmly believe that the indie Web shouldn't be gatekept from people who genuinely want to learn more about it, especially if it's over something they can't control.</p>
+                <p>So, here's a list of things you might want to upgrade or add to your site, with instructions on how to do them and why they're important.</p>
+                <p>These are just suggestions. As you can probably tell, this site itself isn't mobile-friendly, which is an accessibility issue. At the end of the day, a Webmaster has to take these issues into consideration and arrive at a conclusion that allows for their creative vision to be fulfilled. It's all part of the problem-solving process of creating websites.</p>
+                <h3>Table of contents</h3>
+                <ol>
+                    <li><a href="#screen-readers">Designing with screen readers in mind</a></li>
+                    <li><a href="#alt-text">Writing alt text</a></li>
+                    <li><a href="#autoplay">Autoplay sounds and music</a></li>
+                    <li><a href="#links">Links must look like links</a></li>
+                    <li><a href="#fonts">Fonts and readability</a></li>
+                    <li><a href="#emojis">Emojis</a></li>
+                    <li><a href="#gifs">Flashing GIFs</a></li>
+                    <li><a href="#transcripts">Transcripts for audio</a></li>
+                    <li><a href="#image-size">Compressing images</a></li>
+                </ol>
+                <!--Screen readers-->
+                <h2 id="screen-readers">Designing with screen readers in mind</h2>
+                <p>Screen readers are a form of assistive technology that reads text and image content set in a website out loud. They are essential for blind users and important for people with reading issues, such as those with dyslexia. They are useful for those who are visually impaired or have difficulty reading for whatever reason.</p>
+                <p>Common desktop screen readers include:</p>
+                <ul>
+                    <li><a href="https://www.nvaccess.org/download/" target="_blank">NVDA</a> for Windows</li>
+                    <li><a href="https://help.gnome.org/users/orca/stable/" target="_blank">Orca</a> for Linux</li>
+                    <li><a href="https://support.apple.com/guide/voiceover/welcome/mac" target="_blank">VoiceOver</a> for macOS</li>
+                </ul>
+                <p>The first two are completely free to use, while VoiceOver comes with Apple products. These tools are essential for testing out your site if you want to keep it accessible.</p>
+                <p>It's recommended you actually test your site to see if it works well with screen readers. You'll learn a lot by using them.</p>
+                <p>While writing, do not use all caps or all lowercase. Both of these can mess up with screen readers, especially the former. Some screen readers will not recognize a word in all caps as a single word, and will instead read each letter individually; using all lowercase gives the opposite problem- some acronyms will be read as a single word.</p>
+                <p>If you want to write in all caps or all lowercase, using the CSS property text-transform is recommended instead.</p>
+                <p>For example, let's say we want all major headings to be in all lowercase. The CSS code we'd use would go as follows:</p>
+                <pre>h1 {
+    text-transform: lowercase;
+}</pre>
+                <p>Alternitavely, if we wanted to write only certain parts of our text to be in all caps, we'd make a CSS class to use with the span tag:</p>
+                <pre>.yell {
+    text-transform: uppercase;
+}</pre>
+                <!--Alt text-->
+                <h2 id="alt-text">Writing alt text</h2>
+                <p>Alt text is essential for accessible design- it allows screen readers to describe an image, and it replaces it if the image doesn't load or doesn't exist in the server so context isn't lost.</p>
+                <p>It's very easy to implement. You merely have to add the alt= attribute to the img tag. Here's an example:</p>
+                <pre>&ltimg src="cat.png" alt="Picture of a cat"&gt</pre>
+                <p>Of course, for more complex images you will have to write longer alt text. However, avoid details that are unnecessary to the overall message. Don't go on tangents about the color of a character's clothes when the main focus is what they're doing, for example.</p>
+                <img src="/images/article-images/bosch.png" class="center" alt="Detail of Hieronymus Bosch's The Temptation of Saint Anthony. It features and anthropomorphic bird-like creature holding a letter in its beak.">
+                <p>For this image, we decided to use a detail of a painting by Bosch. Here is the alt text we wrote, for those who don't want to access the page source:</p>
+                <q>Detail of Hieronymus Bosch's The Temptation of Saint Anthony. It features and anthropomorphic bird-like creature holding a letter in its beak.</q>
+                <p>Take special care regarding decorative images and image-heavy galleries. If an image is meant as a decoration, one or two words might be enough, while image-heavy galleries should have brief descriptions. This is because screen readers will take ages to read out a page while focusing on the wrong things.</p>
+                <p>Additionally, the title attribute must not be the same as the alt text. This is because screen readers read both, and would make for an annoying browsing experience.</p>
+                <!--Autoplay-->
+                <h2 id="autoplay">Autoplay sounds and music</h2>
+                <p>In regards to accessibility, autoplay is often frowned upon. Why is that?</p>
+                <ol>
+                    <li>People using screen readers will have trouble hearing them.</li>
+                    <li>People might be startled when they hear loud, sudden music.</li>
+                </ol>
+                <p>That being said, if you want to include autoplay, there are a few things you can do to make it more user-friendly.</p>
+                <p>The first is to include JavaScript that sets the volume to be lower off the start.</p>
+                <pre>&lt;body&gt;
+    &lt;audio controls autoplay id=&#34;volumeset&#34;&gt;
+        &lt;source src=&#34;html-audio.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+    &lt;/audio&gt;
+                            
+    &lt;script&gt;
+        var audio = document.getElementById(&#34;volumeset&#34;);
+        audio.volume = 0.4;
+    &lt;/script&gt;
+&lt;/body&gt;</pre>
+                <p>The second is to always include audio controls, so the user can decide to lower or pause the sounds themselves.</p>
+                <!--Links-->
+                <h2 id="links">Links must look like links</h2>
+                <p>Links must look visually different from regular text, so people know what is and isn't a link.</p>
+                <p>However, for truly accessible design, make sure they are distinct- we underline our links, for example. This is so people who are colorblind can also recognize what is and isn't a link. Making links different colors isn't always enough.</p>
+                <p>You could also get creative with it. A pal of ours, <a href="https://noombers.neocities.org/" target="_blank">numbers</a>, came up with a pretty neat and unique solution: using the CSS selector :after, they included an arrow after each link.</p>
+                <pre>a:after {
+    content: "↗";
+}</pre>
+                <p>On a side note, numbers went even further and distinguished outbound and inbound links, but that isn't inherently necessary for this. What's necessary is that the thing that comes afterwards is:</p>
+               <ol>
+                    <li>Not an image, because if the image doesn't load properly people won't know where the links are.</li>
+                    <li>Not a character that is often used for other purposes. Brackets, quotation marks, and so on should be avoided in this instance.</li>
+                </ol>
+                <!--Fonts-->
+                <h2 id="fonts">Fonts and readability</h2>
+                <p>Fonts are obviously very important if you want to have text on a website. It's important to consider certain things when implementing font styling though.</p>
+                <p>Secondly, make sure the size isn't too small- 1em (which is the standard font size) is quite good, we recommend not going under .8em as the text might be too small for users to read. Remember, just because you can read small text, that doesn't mean everyone can- even users that aren't visually impaired might have trouble reading tiny text.</p>
+                <p>Color is equally important. The colors must contrast against each other in a way that doesn't cause eye-strain. So, we recommend avoiding bright text on bright backgrounds, pastel text on pastel backgrounds, et cetera.</p>
+                <p>Finally, to make things easier for dyslexic users, there are many things you can change to make the text easier to read, such as word/letter spacing, avoiding justified text... This is covered in-depth by <a href="https://solaria.neocities.org/" target="_blank">solaria</a>'s' <a href="https://solaria.neocities.org/readability" target="_blank">readability guide</a>, we highly recommend checking it out!</p>
+                <!--Emojis-->
+                <h2 id="emojis">Emojis</h2>
+                <p>Emojis are a part of modern day-to-day Internet life, even being essential for certain memes. However, with more emojis being added regularly, it might take some time for all devices to catch up. As such, it might be a good idea to include a custom emoji set.</p>
+                <p>You could use small pixel art (sozai) if you like cute assets, or use a pre-built emoji library such as <a href="https://twemoji.twitter.com/" target="_blank">Twemoji</a> or <a href="https://mutant.tech/" target="_blank">Mutant Standard</a>.</p>
+                <p>It might also be beneficial to include alt text. Here's an example:</p>
+                <pre>&lt;img src=&#34;/demon.svg&#34; alt=&#34;Demon emoji&#34;&gt;</pre>
+                <p>You might want to define the width of the emojis if you're using SVG files, as they're originally quite large.</p>
+                <pre>.emoji {
+    width: 1rem;
+}</pre>
+                <p>The result will look similar to this: <img src="/images/article-images/demon.svg" alt="Demon emoji" class="emoji"></p>
+                <!--Flashing GIFs-->
+                <h2 id="gifs">Flashing GIFs</h2>
+                <p>Photosensitive epilepsy is a condition where seizures are triggered by flashing lights or contrasting light and dark patterns. These kinds of patterns can also affect epileptic folk whose epilepsy isn't photosensitive, making them feel unwell, disorientated, or uncomfortable. In rare cases, seizures might even be fatal, so it's important to keep that in mind when designing a website.</p>
+                <p>There's ways to help those with epilepsy have an easier time navigating the Web when developing a website:</p>
+                <ol>
+                    <li>Make sure not to include flashing GIFs where they are not needed, or at least avoid putting them in large numbers in the same page.</li>
+                    <li>Slow down GIFs using your preferred GIF editor. A good one is the browser-based <a href="https://ezgif.com/" target="_blank">EZGIF</a></li>
+                    <li>Always include warnings when linking to a page with seizure-inducing GIFs.</li>
+                    <li>Make sure your GIF is not between 3-30 hertz (flashes per second), as those are the most common rates to trigger seizures.</li>
+                </ol>
+                <p>There's also a way to blur an image before it's hovered with CSS, which can come in handy for many flashing GIFs.</p>
+                <pre>.flashing {
+    -webkit-filter: blur(5px); /* For Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+                    
+.flashing:hover {
+    -webkit-filter: none;
+    filter: none;
+}</pre>
+                <p>The blur effect should be around 5 pixels like the code above, but you might have to tweak it a bit depending on how flashy your GIF is.</p>
+                <p>This code has been applied to this blinkie (it's not seizure-inducing):</p>
+                <img src="/images/freebies/blinkies/thanks-paul.gif" class="center flashing" alt="Blinkie">
+                <!--Transcripts-->
+                <h2 id="transcripts">Transcripts for audio</h2>
+                <p>Similarly to people who can't see well, there are people who can't hear well. As such, it's pretty important to add transcripts of relevant audio.</p>
+                <p>Beside helping HOH people, it will also allow users with no sound on to understand the context.</p>
+                <p>Here's Youtube's first ever video (Me at the zoo), with a transcript below it:</p>
+                <iframe width="100%" height="300px" src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <q>Jawed Karim: [to the camera] All right, so here we are in front of the, uh, elephants, and the cool thing about these guys is that, is that they have really, really, really long, um, trunks, and that's, that's cool, and that's pretty much all there is to say.</q>
+                <p>This transcript was copy-pasted from <a href="https://en.wikiquote.org/wiki/Me_at_the_zoo" target="_blank">Wikiquote</a>, as we could barely understand what the guy was saying myself. It's important to note that videos with proper captions in them don't require transcripts.</p>
+                <p>Naturally, it takes a lot of work if the video is long. However, anything that is relevant to the overall point of the page should have transcripts- even if you leave some things out, such as the stutters or irrelevant jokes.</p>
+                <!--Image size-->
+                <h2 id="image-size">Compressing images</h2>
+                <p>If your page is image-heavy, it might be beneficial to compress them. In other words, lower their file size. This will help your website load faster, and it's especially helpful for those with a poor Internet connection.</p>
+                <p>There are programs that allow you to shave off the size of image files, such as <a href="https://pnggauntlet.com/" target="_blank">PNGGauntlet</a> (for Windows) or <a href="https://github.com/Huluti/Curtail" target="_blank">Curtail</a> (for Linux). There are also browser-based solutions, such as <a href="https://squoosh.app/" target="_blank">Squoosh</a> and <a href="https://ezgif.com/" target="_blank">EZGIF</a>. The latter allows users for multiple file types, including GIFs, so it's especially recommended.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
