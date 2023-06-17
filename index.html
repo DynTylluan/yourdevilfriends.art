@@ -1,51 +1,60 @@
+<!--
+    Hey there. We see you're spying on our code.
+    Here are a few things we should note:
+        > If you're here to learn, be aware we are mere hobbyists.
+        Perhaps this is not the best place to educate yourself, we
+        have a page dedicated to Web development resources over at
+        https://dungbeetle.neocities.org/ (our linkroll project)
+        > If you're here to judge, it would probably be easier to
+        browse our code on GitHub... please don't be too harsh:
+        https://github.com/yourdevilfriends/yourdevilfriends.art/
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The devil's den</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://transmascring.netlify.app/tmring.css">
+    <link rel="stylesheet" href="/css/universal.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>The devils' den</title>
 </head>
 <body>
-    <!--NAVIGATION SIDEBAR-->
-    <nav>
-        <header></header>
-        <div id="sidebar">
-            <script type="text/javascript" src="/sidebar.js"></script>
-        </div>
-        <footer></footer>
-    </nav>
-    <!--MAIN CONTENT-->
     <main>
         <header>
-            <h1>The devil's den</h1>
+            <a href="/"><img src="/images/headers/nekojiru.png" alt="Header image"></a>
         </header>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="/art.html">Art</a>
+            <a href="/writing.html">Writing</a>
+            <a href="/misc.html">Misc.</a>
+            <a href="/credits.html">Site credits</a>
+        </nav>
         <article>
-            <p>Welcome to the home of devilishly good times! This here is a personal site with a large focus on art that ended up being our main online footprint.</p>
-            <p>Stay a while, will ya? Maybe you'll even find something of interest.</p>
-            <p><strong>Mature content warning!</strong> Despite the colorful graphics, this site explores violent and suggestive themes, namely in the artwork pages. By browsing the site further, you consent to seeing these things.</p>
-            <details>
-                <summary>Accessibility statement</summary>
-                <ul>
-                    <li>Uses semantic HTML and alt text as much as possible.</li>
-                    <li>Contains minimal flashing GIFs.</li>
-                    <li>Does not contain autoplayed audio or videos.</li>
-                    <li>Relies on Javascript for navigation, image galleries and webrings.</li>
-                    <li>Tested for screen readers using Orca.</li>
-                    <li>Not mobile friendly.</li>
-                </ul>
-            </details>
-            <p>Like the site? You can link back using this button! We advise against hotlinking as we re-organize files often.</p>
-            <center>
-                <img src="/images/link-buttons/yourdevilfriends.png" alt="yourdevilfriends.art button">
-            </center>
+            <section>
+                <p>Greetings, welcome. You've arrived at the <strong class="rainbow">devils' den</strong>, which by most accounts is not as hellish as it sounds.</p>
+                <p>You can click on the header image at any point to return to the index page.</p>
+                <p><strong>Mature content warning!</strong> This site contains some violent or suggestive content in the art pages.</p>
+                <h3>What is this?</h3>
+                <p>This site is merely a place to dump creative works and whatever crosses our mind.</p>
+                <h3>Who is this?</h3>
+                <p>«I» am... well, you can visit the about page to learn more.</p>
+                <h3>Why is this?</h3>
+                <p>No idea.</p>
+                <img src="/images/decor/neko.gif" class="center">
+                <p class="center">This website was made with blood, sweat, tears and even some degree of effort.<br>
+                ~· God bless this mess ·~</p>
+                <br>
+                <img src="/images/link-buttons/yourdevilfriends.png" alt="Feel free to link back with this button" class="center">
+            </section>
+            <!--Updates-->
+            <h3 class="center rainbow">Update log</h3>
+            <footer id="updates">
+                <p>17/06/2023: Another layout change. Mother of God.</p>
+            </footer>
         </article>
-    </main>
-    <!--WEBRINGS-->
-    <aside>
-        <!-- TRANSMASC RING -->
-        <center>
+        <aside>
+            <!--Transmasc Ring-->
             <div id="tmring">
                 <div id="tmri">
                 <img src="https://transmascring.netlify.app/tiny.png"><br>
@@ -53,28 +62,19 @@
                 <a href="https://transmascring.netlify.app/devils/previous" target="_blank"><< prev</a> | <a href="https://transmascring.netlify.app" target="_blank">index</a> | <a href="https://transmascring.netlify.app/devils/next" target="_blank">next >> </a>
                 </div> 
             </div>
-        </center>
-        <!--*NIXRING-->
-        <div id='linuxring'>
-            <script type="text/javascript" src="https://teethinvitro.neocities.org/webring/linuxring/script/onionring-variables.js"></script>
-            <script type="text/javascript" src="https://teethinvitro.neocities.org/webring/linuxring/script/onionring-widget.js"></script>
-        </div>
-        <!--BAYANET-->
-        <a href="https://ochame.neocities.org/bayanet"><img src="/images/bayaid.png" id="bayanet" style="margin-bottom: 18px;"></a>          
-        <!--PSSRING-->
-        <center>
-            <script src="https://ochame.neocities.org/ring/pssring.js"></script><webring-css style="display: block; max-width: 130px; margin: 2px auto;" site="https://yourdevilfriends.art/">
-        </center>
-        <!--AHSC-->
-        <div id='ahsc' style="margin-left: -65px;">
-            <script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-variables.js"></script>
-            <script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-widget.js"></script>
-            <link rel="stylesheet" href="https://feelingmachine.moe/alterring/onionring.css">
-        </div>
-        <!--SURF CLUB-->
-        <center>
-            <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#c061cb" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
-        </center>
-    </aside>
+            <!--*NixRing-->
+            <div id='linuxring'>
+                <script type="text/javascript" src="https://teethinvitro.neocities.org/webring/linuxring/script/onionring-variables.js"></script>
+                <script type="text/javascript" src="https://teethinvitro.neocities.org/webring/linuxring/script/onionring-widget.js"></script>
+            </div>
+            <!--AHSC-->
+            <div id='ahsc'>
+                <script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-variables.js"></script>
+                <script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-widget.js"></script>
+            </div>
+            <!--PSS Ring-->
+            <script src="https://ochame.neocities.org/ring/pssring.js"></script><webring-css style="display: block; max-width: 130px; margin: auto; margin-top: 10px;" site="https://yourdevilfriends.art/">
+        </aside>
+    </main>
 </body>
 </html>

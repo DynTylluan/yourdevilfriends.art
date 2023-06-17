@@ -1,0 +1,40 @@
+/*Background*/
+
+body {
+    background-image: url(/images/backgrounds/nekos.jpg);
+}
+
+/*Boxes*/
+
+article {
+    max-width: 100%;
+    text-align: center;
+}
+
+section {
+    border-style: double;
+    border-color: #f5f5f5;
+    padding: 15px;
+    width: 120px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: .9em;
+}
+
+.illus {
+    background-color: #e91e63;
+}
+
+.pixel {
+    background-color: #673ab7;
+}
+
+.comix {
+    background-color: #009688;
+}
+
+/*Text*/
+
+a {
+    color: #ffc107;
+}
