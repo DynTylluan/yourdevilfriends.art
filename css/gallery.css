@@ -10,6 +10,9 @@ main {
     margin: 25px;
     width: 600px;
     text-align: center;
+    background-color: #ffffffcc;
+    padding: 15px;
+    color: #000;
 }
 
 main p {
@@ -18,6 +21,12 @@ main p {
     text-align: left;
     border-color: #fff;
     border-style: double;
+    color: #fff;
+}
+
+main img {
+    margin: 10px auto;
+    display: block;
 }
 
 aside {

@@ -6,6 +6,10 @@ body {
 
 /*Boxes*/
 
+header img {
+    filter: drop-shadow(0 0 10px #fff);
+}
+
 #about {
     max-width: 100%;
     background-color: #111111dd;
