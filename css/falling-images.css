@@ -46,6 +46,8 @@
   .fall {
       position: fixed;
       top: -10%;
+      left: 15%;
+      right: 15%;
       z-index: 9999;
       -webkit-user-select: none;
       -moz-user-select: none;

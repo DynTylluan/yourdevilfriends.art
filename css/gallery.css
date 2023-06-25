@@ -31,9 +31,8 @@ main img {
 
 aside {
     position: fixed;
-    left: 680px;
+    left: 700px;
     top: 100px;
-    width: 400px;
 }
 
 aside section {
