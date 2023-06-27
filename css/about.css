@@ -37,8 +37,7 @@ figure {
     margin: 5px;
 }
 
-#picrew {
-    box-shadow: 0 0 5px 5px #fff;
+#married {
     margin-bottom: 10px;
 }
 
@@ -63,5 +62,8 @@ figure {
 
 .rotate:hover {
     transform: rotate(-2deg);
+}
+
+.pixel {
     image-rendering: crisp-edges;
 }
