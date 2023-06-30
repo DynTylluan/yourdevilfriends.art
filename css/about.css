@@ -31,14 +31,20 @@ header img {
     background-color: #111;
 }
 
-figure {
-    width: 250px;
-    text-align: center;
-    margin: 5px;
+#statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+    color: #111;
+    max-width: 250px;
+    height: 90px;
+    overflow: auto;
 }
-
-#married {
-    margin-bottom: 10px;
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
 }
 
 #prefer {
