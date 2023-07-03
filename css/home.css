@@ -59,7 +59,7 @@ aside {
     padding: 10px;
     max-width: 100%;
     background-image: url(/images/backgrounds/kits.gif);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #tmri {
@@ -75,7 +75,7 @@ aside {
     padding: 10px;
     background-color: #000;
     font-size: .8em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 @font-face {
@@ -137,4 +137,8 @@ aside {
 }
 #ahsc a:visited {
   color: #8B00C6;
+}
+
+#RPGMaker {
+  margin-top: 5px;
 }
