@@ -174,19 +174,23 @@ article section {
     border: 1px solid #000;
     border-radius: 15px;
     max-width: 100%;
-    font-size: .8em;
+    font-size: .9em;
     margin: 5px auto;
 }
 
 #tmring {
     max-width: 85%;
-    font-size: .8em;
+    font-size: .9em;
     padding: 10px;
     margin: 5px auto;
 }
 
 #tmri {
     max-width: 100%;
+}
+
+#tmri a {
+    font-size: .7em;
 }
 
 @font-face {
@@ -203,7 +207,7 @@ article section {
   border: 4px #6f3d7b double;
   border-radius: 10px;
   background-image: url("https://feelingmachine.moe/alterring/ahscbackground.png");
-  font-size: .8em;
+  font-size: .9em;
   margin: auto;
 }
 
@@ -212,21 +216,21 @@ article section {
 }
 
 #ahsc .ahsc-prev {
-  font-size: .8em;
+  font-size: 1em;
   text-align: left;
   font-family: 'serif';
   color: white;
 }
 
 #ahsc .ahsc-info {
-  font-size: .8em;
+  font-size: 1em;
   text-align: center;
   font-family: 'venice_classicmedium';
   color: white;
 }
 
 #ahsc .ahsc-next {
-  font-size: .8em;
+  font-size: 1em;
   text-align:right;
   font-family: 'serif';
   color: white;
@@ -246,9 +250,4 @@ article section {
 }
 #ahsc a:visited {
   color: #8B00C6;
-}
-
-#RPGMaker {
-    display: block;
-    margin: auto;
 }
