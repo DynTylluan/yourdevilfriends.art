@@ -2,28 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/universal.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>404 Not found</title>
-    <style>
-        body {
-            background-image: url(/images/backgrounds/kaboom.gif);
-        }
-    </style>
+    <title>404 not found</title>
 </head>
 <body>
     <main>
-        <header>
-            <a href="/"><img src="/images/headers/wiz.gif" alt="Header image"></a>
-        </header>
+        <!--Header & navigation-->
+        <a href="/"><header></header></a>
         <nav>
             <a href="/about.html">About</a>
-            <a href="/art.html">Art</a>
-            <a href="/writing.html">Writing</a>
-            <a href="/misc.html">Misc.</a>
-            <a href="/credits.html">Site credits</a>
+            <div class="dropdown">
+                <button>Visual art</button>
+                <div class="link-list">
+                    <a href="/commissions.html">Commissions</a>
+                    <a href="/illustration.html">Illustration</a>
+                    <a href="/comics.html">Comics</a>
+                    <a href="/pixelart.html">Pixel art</a>
+                    <a href="/archive.html">Old art archive</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Written works</button>
+                <div class="link-list">
+                    <a href="/articles.html">Articles</a>
+                    <a href="/fungerlog.html">F&H log</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Et cetera</button>
+                <div class="link-list">
+                    <a href="/freebies.html">Free graphics</a>
+                    <a href="/scans.html">Scans</a>
+                    <a href="/linkroll.html">Linkroll</a>
+                    <a href="/shrines.html">Shrines</a>
+                </div>
+            </div>
             <a href="https://yourdevilfriends.123guestbook.com/">Guestbook</a>
         </nav>
+        <!--Main content-->
+        <article>
+            <h1>404 Not found</h1>
+            <p><strong>We're working on it!!!!</strong></p>
+        </article>
+        <!--Footer-->
+        <footer>
+            <marquee>Made with blood, sweat, tears and even some amount of effort.</marquee>
+            <p><a href="/rss.xml">Follow updates with RSS!</a></p>
+            <p><a href="mailto:heckmaster@protonmail.com">Contact</a></p>
+        </footer>
     </main>
 </body>
 </html>

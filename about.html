@@ -2,73 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/universal.css">
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>About devils</title>
+    <title>about</title>
 </head>
 <body>
     <main>
-        <header>
-            <a href="/"><img src="/images/headers/microwave.gif" alt="Header image"></a>
-        </header>
+        <!--Header & navigation-->
+        <a href="/"><header></header></a>
         <nav>
             <a href="/about.html">About</a>
-            <a href="/art.html">Art</a>
-            <a href="/writing.html">Writing</a>
-            <a href="/misc.html">Misc.</a>
-            <a href="/credits.html">Site credits</a>
+            <div class="dropdown">
+                <button>Visual art</button>
+                <div class="link-list">
+                    <a href="/commissions.html">Commissions</a>
+                    <a href="/illustration.html">Illustration</a>
+                    <a href="/comics.html">Comics</a>
+                    <a href="/pixelart.html">Pixel art</a>
+                    <a href="/archive.html">Old art archive</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Written works</button>
+                <div class="link-list">
+                    <a href="/articles.html">Articles</a>
+                    <a href="/fungerlog.html">F&H log</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Et cetera</button>
+                <div class="link-list">
+                    <a href="/freebies.html">Free graphics</a>
+                    <a href="/scans.html">Scans</a>
+                    <a href="/linkroll.html">Linkroll</a>
+                    <a href="/shrines.html">Shrines</a>
+                </div>
+            </div>
             <a href="https://yourdevilfriends.123guestbook.com/">Guestbook</a>
         </nav>
-        <img src="/images/decor/cate.gif" class="rotate pixel" style="margin-left: 250px; position: absolute;">
-        <article id="about">
-            <section id="self">
-                <p><span lang="pt">Olá!</span> This is devils speaking.</p>
-                <p>We're a 25 year-old <a href="https://morethanone.info/" target="_blank">system</a> from Portugal collectively known as devils (or Bruno, that works too). Only 2 of us run this website (Alastor and Angel) or use the Internet in general.</p>
-                <p>They/he. Arch BTW (well, EndeavourOS, but still).</p>
-                <h2 class="rainbow">Pals of the site</h2>
-                <center>
-                    <a href="https://mortalsins.neocities.org/" target="_blank"><img src="/images/link-buttons/mortalsins.png" alt="Mortal Sins" title="Patrick <3"></a>
-                    <a href="https://ochame.neocities.org/" target="_blank"><img src="/images/link-buttons/ochame.gif" alt="Ochame" title="Nona"></a>
-                    <a href="https://dokode.moe" target="_blank"><img src="/images/link-buttons/dokodemo.gif" alt="DokoDemo" title="Suni"></a>
-                    <a href="https://feelingmachine.moe/" target="_blank"><img src="/images/link-buttons/feelingmachine.gif" alt="Feeeling Machine" title="Nephro"></a>
-                    <a href="https://aiston.neocities.org/" target="_blank"><img src="/images/link-buttons/aiston.gif" alt="Aiston" title="Ashton"></a>
-                    <a href="https://moonview.neocities.org/" target="_blank"><img src="/images/link-buttons/moonview.gif" alt="Moonview" title="Noa"></a>
-                </center>
-            </section>
+        <!--Main content-->
+        <article>
+            <!--The site-->
+            <h2>About <span class="rainbow">yourdevilfriends.art</span></h2>
+            <p>This website was made because we bought a domain on a whim and figured we'd give it some use.</p>
+            <p>It's hosted on GitHub (Neocities mirror coming... somewhere in the future), entirely hand-coded and built in the simplest fucking way possible.</p>
+            <p>Made for fun and for the love of the indie Web, it's run by two <strong class="rainbow">Webmasters</strong> from the same <a href="https://morethanone.info/" target="_blank">system</a>.</p>
+            <!--The Webmasters-->
+            <h2>About the <span class="rainbow">Webmasters</span></h2>
+            <p>As previously stated, we're both part of a system, one collectively known as <strong class="rainbow">devils</strong> (or Bruno, if you'd prefer a normal name). Two of us run this site, though our unique names are kind of unimportant since we front together all the time anyways.</p>
+            <p>He/him or plural they/them.</p>
+            <p>We're schizophrenic, which can impact the way we interact with others a lot. We tend to isolate ourselves and sometimes say things that come off as strange.</p>
+            <p>Despite that, we love to interact with others. Feel free to reach out!</p>
+            <!--Elsewhere-->
+            <h3>Find us elsewhere</h3>
+            <p>Some site where we are active.</p>
+            <ul>
+                <li><a href="https://dnifreak.tumblr.com/" target="_blank">Reblog Tumblr</a> & <a href="https://yourdevilfriends.tumblr.com/" target="_blank">art Tumblr</a></li>
+                <li><a href="https://blorbo.social/@yourdevilfriends" target="_blank" rel="me">Mastodon</a></li>
+                <li><a href="https://forum.melonland.net/index.php?action=profile;u=641" target="_blank">MelonLand Forum</a></li>
+                <li><a href="https://www.moderneopets.com/userlookup/402" target="_blank">Moderneopets</a> & <a href="https://virtu.pet/userlookup/?user=devils" target="_blank">Virtu.Pet</a></li>
+                <li>We also have some 18+ accounts, but we're not going to link them here</li>
+            </ul>
+            <!--Tamanotchi-->
+            <a href="https://tamanotchi.world/4706c" target="_blank"><img src="https://tamanotchi.world/i2/4706" alt="It's tamaNOTchi! Click to feed!" style="float: right;"></a>
+            <!--Status.Cafe-->
             <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=heckmaster" defer></script>
-            <img src="/images/decor/webmaster.gif" style="position: absolute; margin-top: -25px; margin-left: 10px;">
-            <a href="https://tamanotchi.world/4706c"><img src="https://tamanotchi.world/i2/4706" alt="It's tamaNOTchi! Click to feed!" class="center" style="margin-top: 50px; margin-bottom: 10px;"></a>
-            <p class="center">Spare a food for my child?</p>
         </article>
-        <article id="prefer">
-            <section class="box">
-                <h3>TV & movie delights</h3>
-                <p>Cartoons: <em>Hazbin Hotel</em>, Helluva Boss, Turning Red</p>
-                <p>Anime: <em>Satoshi Kon works</em>, Studio Ghibli works, Mob Psycho 100, Akira, <em>Tekkonkinkreet</em>, <em>Nekojiru</em></p>
-                <p>Live-action: Oldboy... we don't watch a lot of live-action media</p>
-            </section>
-            <section class="box">
-                <h3>Video game delights</h3>
-                <p>Indie games: <em>Hypnospace Outlaw</em>, <em>Slayers X</em>, Tattletail, <em>Fear and Hunger</em>, Yume Nikki, Postal 2</p>
-                <p>Triple-A: <em>Nintendo games</em>, The Elder Scrolls series, Sonic series, Yo-kai Watch series, <em>Persona 5</em></p>
-            </section>
-            <img src="/images/decor/newslady.gif" class="rotate pixel" style="position: absolute; margin-left: -325px; margin-top: 280px;">
-            <section class="box">
-                <h3>Literature delights</h3>
-                <p>Comic/manga authors: <em>Junji Ito</em>, <em>Inio Asano</em>, <span lang="pt">Mariana Pita</span></p>
-                <p>Poets: <em lang="pt">Fernando Pessoa</em>, Edgar Allan Poe</p>
-                <p>Individual books: <em>Bizarre Stories</em> by Olga Tokarczuk, <em>No Longer Human</em> by Osamu Dazai</p>
-            </section>
-            <section class="box">
-                <h3>Miscellaneous delights</h3>
-                <p><em>Art of all kinds</em>, entomology, collecting pins, <em>HTML/CSS</em> (duh), mental health, <em>Neopets</em>, <em>Internet history and oddities</em>, philosophy, D&D, <em>Halley Labs</em>, <em>Everything Everything</em>...</p>
-                <p>... and probably a ton of other stuff too</p>
-            </section>
-            <a href="mailto:heckmaster@protonmail.com"><img src="/images/decor/email.gif" alt="Send us an e-mail" style="position: absolute; margin-top: -50px; margin-left: -40px;">
-        </article>
-        <a href="https://ochame.neocities.org/bayanet/" target="_blank"><img src="https://ochame.neocities.org/assets/bayanet/v2/devils.png" alt="BayaNet ID" class="center rotate"></a>
+        <!--Footer-->
+        <footer>
+            <marquee>Made with blood, sweat, tears and even some amount of effort.</marquee>
+            <p><a href="/rss.xml">Follow updates with RSS!</a></p>
+            <p><a href="mailto:heckmaster@protonmail.com">Contact</a></p>
+        </footer>
     </main>
-    <img src="/images/decor/spin.gif" style="position: fixed; bottom: 0; left: 15px;">
 </body>
 </html>
