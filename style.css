@@ -155,6 +155,7 @@ footer marquee {
     background-color: azure;
     border: 1px solid midnightblue;
     width: 260px;
+    margin-top: 10px;
 }
 #statuscafe-username {
     margin-bottom: .5em;
