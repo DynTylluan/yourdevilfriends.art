@@ -61,6 +61,7 @@ main {
 
 main header {
     background-image: url(/images/header.gif);
+    background-position: center;
     background-size: cover;
     border: 1px solid #000;
     max-width: 100%;
