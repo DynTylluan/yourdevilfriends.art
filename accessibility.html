@@ -61,10 +61,10 @@
         <article>
             <h1>Tips and tricks for Web accessibility</h1>
             <!--Intro & table of contents-->
-            <p>Whenever we browse personal websites, it's often we notice a lack of thought from their Webmasters when it comes to browsing the Web in a way different than their own.</p>
-            <p>Since we started creating websites, we ended up learning a lot about Web accessibility and why it matters. We very firmly believe that the indie Web shouldn't be gatekept from people who genuinely want to learn more about it, especially if it's over something they can't control.</p>
+            <p>Whenever I browse personal websites, it's often I notice a lack of thought from their Webmasters when it comes to browsing the Web in a way different than their own.</p>
+            <p>Since I started creating websites, I ended up learning a lot about Web accessibility and why it matters. I very firmly believe that the indie Web shouldn't be gatekept from people who genuinely want to learn more about it, especially if it's over something they can't control.</p>
             <p>So, here's a list of things you might want to upgrade or add to your site, with instructions on how to do them and why they're important.</p>
-            <p>These are just suggestions. As you can probably tell, this site itself isn't mobile-friendly, which is an accessibility issue. At the end of the day, a Webmaster has to take these issues into consideration and arrive at a conclusion that allows for their creative vision to be fulfilled. It's all part of the problem-solving process of creating websites.</p>
+            <p>These are just suggestions. As you can probably tell, this site itself isn't entirely mobile-friendly, which is an accessibility issue. At the end of the day, a Webmaster has to take these issues into consideration and arrive at a conclusion that allows for their creative vision to be fulfilled. It's all part of the problem-solving process of creating websites.</p>
             <h3>Table of contents</h3>
             <ol>
                 <li><a href="#screen-readers">Designing with screen readers in mind</a></li>
@@ -105,7 +105,7 @@ text-transform: uppercase;
             <pre>&ltimg src="cat.png" alt="Picture of a cat"&gt</pre>
             <p>Of course, for more complex images you will have to write longer alt text. However, avoid details that are unnecessary to the overall message. Don't go on tangents about the color of a character's clothes when the main focus is what they're doing, for example.</p>
             <img src="/images/article-images/bosch.png" class="center" alt="Detail of Hieronymus Bosch's The Temptation of Saint Anthony. It features and anthropomorphic bird-like creature holding a letter in its beak.">
-            <p>For this image, we decided to use a detail of a painting by Bosch. Here is the alt text we wrote, for those who don't want to access the page source:</p>
+            <p>For this image, I decided to use a detail of a painting by Bosch. Here is the alt text I wrote, for those who don't want to access the page source:</p>
             <q>Detail of Hieronymus Bosch's The Temptation of Saint Anthony. It features and anthropomorphic bird-like creature holding a letter in its beak.</q>
             <p>Take special care regarding decorative images and image-heavy galleries. If an image is meant as a decoration, one or two words might be enough, while image-heavy galleries should have brief descriptions. This is because screen readers will take ages to read out a page while focusing on the wrong things. For pages that are entirely composed of images, it might actually be wiser to not use alt text at all, or use it very scarcely.</p>
             <p>Additionally, the title attribute must not be the same as the alt text. This is because screen readers read both, and would make for an annoying browsing experience.</p>
@@ -133,7 +133,7 @@ text-transform: uppercase;
             <h2 id="links">Links must look like links</h2>
             <p>Links must look visually different from regular text, so people know what is and isn't a link.</p>
             <p>However, for truly accessible design, make sure they are distinct- we underline our links, for example. This is so people who are colorblind can also recognize what is and isn't a link. Making links different colors isn't always enough.</p>
-            <p>You could also get creative with it. A pal of ours, <a href="https://noombers.neocities.org/" target="_blank">numbers</a>, came up with a pretty neat and unique solution: using the CSS selector :after, they included an arrow after each link.</p>
+            <p>You could also get creative with it. A pal of mine, <a href="https://noombers.neocities.org/" target="_blank">numbers</a>, came up with a pretty neat and unique solution: using the CSS selector :after, they included an arrow after each link.</p>
             <pre>a:after {
 content: "↗";
 }</pre>
@@ -147,7 +147,7 @@ content: "↗";
             <p>Fonts are obviously very important if you want to have text on a website. It's important to consider certain things when implementing font styling though.</p>
             <p>Secondly, make sure the size isn't too small- 1em (which is the standard font size) is quite good, we recommend not going under .8em as the text might be too small for users to read. Remember, just because you can read small text, that doesn't mean everyone can- even users that aren't visually impaired might have trouble reading tiny text.</p>
             <p>Color is equally important. The colors must contrast against each other in a way that doesn't cause eye-strain. So, we recommend avoiding bright text on bright backgrounds, pastel text on pastel backgrounds, et cetera.</p>
-            <p>Finally, to make things easier for dyslexic users, there are many things you can change to make the text easier to read, such as word/letter spacing, avoiding justified text... This is covered in-depth by <a href="https://solaria.neocities.org/" target="_blank">solaria</a>'s' <a href="https://solaria.neocities.org/readability" target="_blank">readability guide</a>, we highly recommend checking it out!</p>
+            <p>Finally, to make things easier for dyslexic users, there are many things you can change to make the text easier to read, such as word/letter spacing, avoiding justified text... This is covered in-depth by <a href="https://solaria.neocities.org/" target="_blank">solaria</a>'s' <a href="https://solaria.neocities.org/readability">readability guide</a>, I highly recommend checking it out!</p>
             <!--Emojis-->
             <h2 id="emojis">Emojis</h2>
             <p>Emojis are a part of modern day-to-day Internet life, even being essential for certain memes. However, with more emojis being added regularly, it might take some time for all devices to catch up. As such, it might be a good idea to include a custom emoji set.</p>
@@ -189,7 +189,7 @@ filter: none;
             <p>Here's Youtube's first ever video (Me at the zoo), with a transcript below it:</p>
             <iframe width="100%" height="300px" src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <q>Jawed Karim: [to the camera] All right, so here we are in front of the, uh, elephants, and the cool thing about these guys is that, is that they have really, really, really long, um, trunks, and that's, that's cool, and that's pretty much all there is to say.</q>
-            <p>This transcript was copy-pasted from <a href="https://en.wikiquote.org/wiki/Me_at_the_zoo" target="_blank">Wikiquote</a>, as we could barely understand what the guy was saying ourselves. It's important to note that videos with proper captions in them don't require transcripts.</p>
+            <p>This transcript was copy-pasted from <a href="https://en.wikiquote.org/wiki/Me_at_the_zoo" target="_blank">Wikiquote</a>, as I could barely understand what the guy was saying myself. It's important to note that videos with proper captions in them don't require transcripts.</p>
             <p>Naturally, it takes a lot of work if the video is long. However, anything that is relevant to the overall point of the page should have transcripts- even if you leave some things out, such as the stutters or irrelevant jokes.</p>
             <!--Image size-->
             <h2 id="image-size">Compressing images</h2>
