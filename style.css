@@ -129,10 +129,11 @@ nav button {
     background-color: #000;
     border: none;
     height: 50px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #fff;
     text-transform: lowercase;
     cursor: pointer;
+    position: relative;
 }
 
 nav button:hover {
