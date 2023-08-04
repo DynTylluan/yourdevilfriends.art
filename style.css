@@ -98,6 +98,12 @@ header {
     clip-path: polygon(100% 85%, 55% 85%, 45% 0, 0 0, 0% 100%, 100% 100%);
 }
 
+#kitty {
+    position: absolute;
+    top: 0;
+    left: 55%;
+}
+
 main {
     width: 420px;
     padding: 15px 25px;
