@@ -1,13 +1,17 @@
 /*Basic shit*/
+html {
+    background-image: url(/images/background.png);
+    background-color: #fff;
+    background-attachment: fixed;
+}
 
 body {
     font-size: .9em;
     font-family: sans-serif;
     color: #000;
-    background-color: #fff;
-    background-attachment: fixed;
     text-transform: lowercase;
-    background-image: url(/images/background.png);
+    width: fit-content;
+    margin: auto;
     position: relative;
 }
 
@@ -87,6 +91,7 @@ details summary {
     background-color: #ddd;
     margin: 25px auto;
     border-radius: 15px;
+    position: relative;
 }
 
 header {
@@ -101,7 +106,7 @@ header {
 #kitty {
     position: absolute;
     top: 0;
-    left: 55%;
+    left: 60%;
 }
 
 main {
@@ -142,7 +147,7 @@ nav button:hover {
 }
 
 section {
-    width: 200px;
+    width: 47.5%;
     display: inline-block;
     vertical-align: top;
     font-size: .85em;
