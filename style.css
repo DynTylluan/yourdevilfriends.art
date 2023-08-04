@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
     text-transform: lowercase;
     background-image: url(/images/background.png);
+    position: relative;
 }
 
 a {
