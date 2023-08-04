@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>the devils' writing</title>
+</head>
+<body>
+    <div id="contain">
+        <img src="/images/header.gif" style="position: absolute; z-index: 0; top: 26px; left: 55%;">
+        <header>
+            <h1>the devils' den</h1>
+        </header>
+        <nav>
+            <a href="/"><button>Home</button></a>
+            <a href="/art.html"><button>Art</button></a>
+            <a href="/writing.html"><button>Writing</button></a>
+            <a href="/shrines.html"><button>Shrines</button></a>
+            <a href="/links.html"><button>Links</button></a>
+        </nav>
+        <main>
+            <div id="tabs">
+                <button style="width: 210px;" class="tablinks" onclick="openTab(event, 'articles')" id="defaultOpen">Articles</button>
+                <button style="width: 210px;" class="tablinks" onclick="openTab(event, 'poetry')">Poetry</button>
+            </div>
+            <!--Articles-->
+            <div id="articles" class="tabcontent">
+                <h2>Articles</h2>
+                <ul>
+                    <li><h3><a href="/dreamie.html">That one Neocities user</a></h3>
+                    A look back at the bizarre dreamie drama, AKA the great Neocities war of 2022.</li>
+                    <li><h3><a href="/accessibility.html">Tips and tricks for Web accessibility</a></h3>
+                    Common accessibility mistakes and how to fix or work around them. Written with Webmasters who already have knowledge of HTML and CSS in mind.<br>
+                    <strong>Last major update: August 4th, 2023</strong></li>
+                </ul>
+            </div>
+            <!--Poetry-->
+            <div id="poetry" class="tabcontent">
+                <h2>Poetry</h2>
+                <ul>
+                    <li><h3><a href="/the-king.html">The King</a></h3></li>
+                    <li><h3><a href="/the-fall.html">The fall</a></h3></li>
+                    <li><h3><a href="/world-at-war.html">World at war</a></h3></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>© nobody cares / hand-coded / hosted on <a href="https://github.com/">GitHub</a></p>
+        </footer>
+    </div>
+    <script src="/etc/tabs.js"></script>
+</body>
+</html>

@@ -12,7 +12,7 @@
         }
     
         .flashing {
-            -webkit-filter: blur(5px); /* For Safari 6.0 - 9.0 */
+            -webkit-filter: blur(5px);
             filter: blur(5px);
         }
         
@@ -20,46 +20,31 @@
             -webkit-filter: none;
             filter: none;
         }
+
+        .spoiler {
+            background-color: #000;
+        }
+
+        .spoiler:hover {
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
-    <main>
-        <!--Header & navigation-->
-        <a href="/"><header></header></a>
+    <div id="contain">
+        <img src="/images/header.gif" style="position: absolute; z-index: 0; top: 26px; left: 55%;">
+        <header>
+            <h1>the devils' den</h1>
+        </header>
         <nav>
-            <a href="/about.html">About</a>
-            <div class="dropdown">
-                <button>Visual art</button>
-                <div class="link-list">
-                    <a href="/commissions.html">Commissions</a>
-                    <a href="/illustration.html">Illustration</a>
-                    <a href="/comics.html">Comics</a>
-                    <a href="/pixelart.html">Pixel art</a>
-                    <a href="/archive.html">Old art archive</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button>Written works</button>
-                <div class="link-list">
-                    <a href="/articles.html">Articles</a>
-                    <a href="/poems.html">Poems</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button>Et cetera</button>
-                <div class="link-list">
-                    <a href="/freebies.html">Free graphics</a>
-                    <a href="/scans.html">Scans</a>
-                    <a href="/linkroll.html">Linkroll</a>
-                    <a href="/shrines.html">Shrines</a>
-                    <a href="/tamagotchi.html">Tamagotchi graveyard</a>
-                </div>
-            </div>
-            <a href="https://yourdevilfriends.123guestbook.com/">Guestbook</a>
+            <a href="/"><button>Home</button></a>
+            <a href="/art.html"><button>Art</button></a>
+            <a href="/writing.html"><button>Writing</button></a>
+            <a href="/shrines.html"><button>Shrines</button></a>
+            <a href="/links.html"><button>Links</button></a>
         </nav>
-        <!--Main content-->
-        <article>
-            <h1>Tips and tricks for Web accessibility</h1>
+        <main>
+            <h2>Tips and tricks for Web accessibility</h2>
             <!--Intro & table of contents-->
             <p>Whenever I browse personal websites, it's often I notice a lack of thought from their Webmasters when it comes to browsing the Web in a way different than their own.</p>
             <p>Since I started creating websites, I ended up learning a lot about Web accessibility and why it matters. I very firmly believe that the indie Web shouldn't be gatekept from people who genuinely want to learn more about it, especially if it's over something they can't control.</p>
@@ -76,6 +61,9 @@
                 <li><a href="#gifs">Flashing GIFs</a></li>
                 <li><a href="#transcripts">Transcripts for audio</a></li>
                 <li><a href="#image-size">Compressing images</a></li>
+                <li><a href="#spoilers">Spoilers and sensitive content</a></li>
+                <li><a href="#dates">On dates</a></li>
+                <li><a href="#thanks">Special thanks</a></li>
             </ol>
             <!--Screen readers-->
             <h2 id="screen-readers">Designing with screen readers in mind</h2>
@@ -195,13 +183,29 @@ filter: none;
             <h2 id="image-size">Compressing images</h2>
             <p>If your page is image-heavy, it might be beneficial to compress them. In other words, lower their file size. This will help your website load faster, and it's especially helpful for those with a poor Internet connection.</p>
             <p>There are programs that allow you to shave off the size of image files, such as <a href="https://pnggauntlet.com/" target="_blank">PNGGauntlet</a> (for Windows) or <a href="https://github.com/Huluti/Curtail" target="_blank">Curtail</a> (for Linux). There are also browser-based solutions, such as <a href="https://squoosh.app/" target="_blank">Squoosh</a> and <a href="https://ezgif.com/" target="_blank">EZGIF</a>. The latter allows users for multiple file types, including GIFs, so it's especially recommended.</p>
-        </article>
-        <!--Footer-->
+            <!--Spoilers-->
+            <h2 id="spoilers">Spoilers and sensitive content</h2>
+            <p>When writing about sensitive topics or even trivial things such as movie spoilers, you might be tempted to use the details tag to hide the offending text. However, here's a way to do so without having to click anything to showcase hidden text...</p>
+            <p>Using the span tag and some CSS, we can create text that will only be shown when it's hovered. The background color should be the same as the text color.</p>
+            <pre>.spoiler {
+    background-color: #000;
+}
+    
+.spoiler:hover {
+    background-color: transparent;
+}</pre>
+            <p>The result will look as follows: <span class="spoiler">you just lost the game.</span></p>
+            <!--Dates-->
+            <h2 id="dates">On dates</h2>
+            <p>Date formats aren't universal, that much is an obvious statement. Take 11/12/2013, for instance. For some this reads as December 11th, 2013- for others, November 11th, 2013.</p>
+            <p>A good way to avoid confusion is to mention the month by name. I'm a big fan of writing out the whole date (December 11th, 2013), but you might use something like 11/Dec/2013 as an alternative. Either that or mention what kind of date format you use somewhere in your website.</p>
+            <!--Special thanks-->
+            <h2 id="thanks">Special thanks</h2>
+            <p>Many thanks to <a href="https://owly.fans/">Cass</a> for pointing out many of these issues to me, and to <a href="https://solaria.neocities.org/">Solaria</a> for letting me link their readability guide.</p>
+        </main>
         <footer>
-            <marquee>Made with blood, sweat, tears and even some amount of effort.</marquee>
-            <p><a href="/rss.xml">Follow updates with RSS!</a></p>
-            <p><a href="mailto:heckmaster@protonmail.com">Contact</a></p>
+            <p>© nobody cares / hand-coded / hosted on <a href="https://github.com/">GitHub</a></p>
         </footer>
-    </main>
+    </div>
 </body>
 </html>

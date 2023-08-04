@@ -6,81 +6,70 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>tamagotchi graveyard</title>
     <style>
-        section {
-           display: inline-block;
-           vertical-align: top;
-           height: 200px;
-           max-width: 48.5%;
-           padding-top: 10px;
-           border: 1px solid #000;
-           text-align: center;
-           overflow: auto;
+        body {
+            background-image: url(/images/tamagotchi/background.png);
         }
 
-        section img {
-            image-rendering: pixelated;
-            height: 118px;
+        #contain {
+            background-color: #b768a2;
+        }
+
+        .rip {
+            border-radius: 50% 50% 0 0;
+            border: 1px solid #000;
+            background-color: #ddd;
+            height: 150px;
+            width: 49%;
+            text-align: center;
+            padding-top: 50px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px auto;
+        }
+
+        .rip img {
+            height: 64px;
+            width: 64px;
+            border: 4px ridge #a0522d;
+            object-fit: contain;
+            background-color: #fff;
         }
     </style>
 </head>
 <body>
-    <main>
-        <!--Header & navigation-->
-        <a href="/"><header></header></a>
+    <div id="contain">
+        <img src="/images/tamagotchi/header.gif" style="position: absolute; z-index: 0; top: 26px; left: 55%;">
+        <header>
+            <h1>the devils' den</h1>
+        </header>
         <nav>
-            <a href="/about.html">About</a>
-            <div class="dropdown">
-                <button>Visual art</button>
-                <div class="link-list">
-                    <a href="/commissions.html">Commissions</a>
-                    <a href="/illustration.html">Illustration</a>
-                    <a href="/comics.html">Comics</a>
-                    <a href="/pixelart.html">Pixel art</a>
-                    <a href="/archive.html">Old art archive</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button>Written works</button>
-                <div class="link-list">
-                    <a href="/articles.html">Articles</a>
-                    <a href="/poems.html">Poems</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button>Et cetera</button>
-                <div class="link-list">
-                    <a href="/freebies.html">Free graphics</a>
-                    <a href="/scans.html">Scans</a>
-                    <a href="/linkroll.html">Linkroll</a>
-                    <a href="/shrines.html">Shrines</a>
-                    <a href="/tamagotchi.html">Tamagotchi graveyard</a>
-                </div>
-            </div>
-            <a href="https://yourdevilfriends.123guestbook.com/">Guestbook</a>
+            <a href="/"><button>Home</button></a>
+            <a href="/art.html"><button>Art</button></a>
+            <a href="/writing.html"><button>Writing</button></a>
+            <a href="/shrines.html"><button>Shrines</button></a>
+            <a href="/links.html"><button>Links</button></a>
         </nav>
-        <!--Main content-->
-        <article>
-            <h1>Tamagotchi graveyard</h1>
+        <main>
+            <h2>Tamagotchi graveyard</h2>
             <p>I'll never forget you...</p>
-            <p>Graphics are official Tamagotchi artwork.</p>
-            <section>
-                <img src="/images/tamagotchi/marutchi.png" alt="Marutchi">
+            <div class="rip">
+                <img src="/images/tamagotchi/marutchi.gif">
                 <h3>Jesus</h3>
                 <p>18/07/2023-20/07/2023</p>
-            </section>
-            <!---->
-            <section>
-                <img src="/images/tamagotchi/mametchi.png" alt="Mametchi">
+            </div>
+            <div class="rip">
+                <img src="/images/tamagotchi/mametchi.gif">
                 <h3>Adult Baby</h3>
                 <p>04/07/2023-18/07/2023</p>
-            </section>
-        </article>
-        <!--Footer-->
+            </div>
+            <figure class="center">
+                <img src="/images/tamagotchi/bad-news.gif">
+                <figcaption>They ain't gonna make it.</figcaption>
+            </figure>
+        </main>
         <footer>
-            <marquee>Made with blood, sweat, tears and even some amount of effort.</marquee>
-            <p><a href="/rss.xml">Follow updates with RSS!</a></p>
-            <p><a href="mailto:heckmaster@protonmail.com">Contact</a></p>
+            <p>© nobody cares / hand-coded / hosted on <a href="https://github.com/">GitHub</a></p>
         </footer>
-    </main>
+    </div>
 </body>
 </html>
