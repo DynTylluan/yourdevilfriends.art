@@ -126,7 +126,7 @@ nav {
 
 nav button {
     text-align: center;
-    width: 19.362%;
+    width: calc( (100% / 5) - 3px );
     padding: 10px;
     background-color: #000;
     font-family: sans-serif;
