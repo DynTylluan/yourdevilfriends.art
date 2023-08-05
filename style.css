@@ -123,6 +123,7 @@ nav {
     margin: auto;
     height: 50px;
     background-color: #000;
+    white-space: nowrap;
 }
 
 nav button {
