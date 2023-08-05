@@ -154,6 +154,7 @@ section {
     vertical-align: top;
     font-size: .85em;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 .box {
@@ -162,6 +163,7 @@ section {
     max-width: 100%;
     padding: 2px 10px;
     overflow: auto;
+    white-space: normal;
 }
 
 footer {
