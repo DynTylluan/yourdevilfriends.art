@@ -1,24 +1,55 @@
-/*Basic shit*/
-html {
-    background-image: url(/images/background.png);
-    background-color: #fff;
-    background-attachment: fixed;
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: .9em;
+    text-transform: lowercase;
+    position: relative;
+    width: 800px;
+    margin: auto;
 }
 
-body {
-    font-size: .9em;
-    font-family: sans-serif;
-    color: #000;
-    text-transform: lowercase;
-    width: fit-content;
-    margin: auto;
-    position: relative;
-    -webkit-text-size-adjust: 100%
+header {
+    max-width: 100%;
+    height: 60px;
+}
+
+aside {
+    width: 190px;
+    float: right;
+    top: 65px;
+    overflow: hidden;
+    min-height: 500px;
+    position: sticky;
+}
+
+nav {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 560px;
+    min-height: 500px;
+    padding: 10px 15px;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+}
+
+section {
+    border: 1px solid #fff;
+    max-width: 100%;
+    padding: 10px;
 }
 
 a {
-    color: #0000ff;
-    text-decoration: underline dashed;
+    color: #ff0000;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -29,22 +60,35 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5px auto;
 }
 
+
 img, video, iframe {
     max-width: 100%;
     max-height: 100%;
+    border: none;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    margin: auto;
 }
 
 figcaption {
-    text-align: center;
     font-style: italic;
-    font-size: .85em;
+    font-size: .8em;
 }
 
 pre {
-    background-color: #000;
-    color: #fff;
+    color: #00ff00;
     padding: 10px;
-    border-radius: 5px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    overflow: auto;
 }
 
 q {
@@ -73,10 +117,22 @@ details summary {
     cursor: pointer;
 }
 
-.yell {
+button {
+    width: 100%;
+    text-align: left;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    border: 1px solid #fff;
+    background-color: #000;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
+
+button:hover {
+    border: 1px dashed #fff;
+}
+
+/*Classes & IDs*/
 
 .center {
     margin: auto;
@@ -84,142 +140,64 @@ details summary {
     text-align: center;
 }
 
-/*Boxes*/
-
-#contain {
-    width: 470px;
-    padding: 25px;
-    background-color: #ddd;
-    margin: 25px auto;
-    border-radius: 15px;
-    position: relative;
-}
-
-header {
-    max-width: 450px;
-    height: 50px;
-    margin: auto;
-    padding: 10px;
-    background-color: #fff;
-    clip-path: polygon(100% 85%, 55% 85%, 45% 0, 0 0, 0% 100%, 100% 100%);
-}
-
-#kitty {
-    position: absolute;
-    top: 0;
-    left: 60%;
-}
-
-main {
-    width: 420px;
-    padding: 15px 25px;
-    padding-bottom: 5px;
-    margin: auto;
-    background-color: #fff;
-}
-
-nav {
-    width: 470px;
-    margin: auto;
-    height: 50px;
-    background-color: #000;
-    white-space: nowrap;
-}
-
-nav button {
-    text-align: center;
-    width: calc( (100% / 5) - 3px );
-    padding: 9px;
-    background-color: #000;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #000;
-    border: none;
-    height: 50px;
-    font-size: 1.2em;
-    color: #fff;
-    text-transform: lowercase;
-    cursor: pointer;
-    position: relative;
-}
-
-nav button:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.halves {
-    white-space: nowrap;
-}
-
-section {
-    width: 47.5%;
-    display: inline-block;
-    vertical-align: top;
-    font-size: .85em;
-    margin-bottom: 10px;
-    white-space: normal;
-}
-
-.box {
-    border: 1px solid #000;
-    height: 160px;
+.navlink {
+    text-align: right;
+    display: block;
     max-width: 100%;
-    padding: 2px 10px;
+}
+
+#updates {
+    background-color: #fff;
+    background-image: url(/images/decor/cat-background.png);
+    color: #000;
+    height: 135px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+#updates p, #updates a {
+    background-color: #fff;
+}
+
+#webrings {
+    border: none;
+    float: right;
+    width: 200px;
+    margin-left: 15px;
+}
+
+#webrings section {
+    max-height: 200px;
     overflow: auto;
 }
 
-footer {
-    max-width: 450px;
-    height: 25px;
-    margin: 0 auto;
-    padding: 10px;
-    overflow: hidden;
-    padding-bottom: 15px;
-    font-size: .7em;
+#statuscafe {
+    padding: .5em;
     background-color: #fff;
-    text-align: right;
-    clip-path: polygon(0% 0%, 0% 20%, 40% 20%, 50% 100%, 100% 100%, 100% 0%);
-}
-
-/*Tabs*/
-#tabs {
-    overflow: hidden;
-    background-color: #000;
-    height: 35px;
-    max-width: 100%;
-}
-
-#tabs button {
-    background-color: #000;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-family: sans-serif;
-    text-transform: lowercase;
-    height: 35px;
-    font-size: 1em;
-    float: left;
-}
-
-#tabs button:hover, #tabs button.active {
-    background-color: #fff;
+    background-image: url(/images/decor/cat-background.png);
+    border: 1px solid #fff;
     color: #000;
+    margin-bottom: 10px;
 }
-
-.tabcontent {
-    display: none;
-    margin-top: 10px;
+#statuscafe-username {
+    margin-bottom: .5em;
+    background-color: #fff;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    background-color: #fff;
 }
 
 /*Webrings*/
 
 #linuxring {
     border: 1px solid #000;
+    background-color: #fff;
     border-radius: 15px;
     max-width: 100%;
     font-size: .9em;
     margin: 5px auto;
+    color: #000;
 }
 
 #tmring {
@@ -294,4 +272,10 @@ footer {
 }
 #ahsc a:visited {
   color: #8B00C6;
+}
+
+/*Update log*/
+
+.feed-title, .feed-item-title {
+    display: none;
 }

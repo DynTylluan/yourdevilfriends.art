@@ -2,54 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>the devils' writing</title>
+    <title>madman's ramblings</title>
+    <style>
+        main h3::before {
+            content: '→ ';
+        }
+    </style>
 </head>
 <body>
-    <div id="contain">
-        <img src="/images/header.gif" id="kitty">
-        <header>
-            <h1>the devils' den</h1>
-        </header>
-        <nav>
-            <a href="/"><button>Home</button></a>
-            <a href="/art.html"><button>Art</button></a>
-            <a href="/writing.html"><button>Writing</button></a>
-            <a href="/fun.html"><button>Fun</button></a>
-            <a href="/links.html"><button>Links</button></a>
+    <header>
+        <h1><img src="/images/decor/cat.gif" style="margin-right: 10px;">Madman's ramblings</h1>
+    </header>
+    <aside>
+        <nav id="sidebar">
+            <script type="text/javascript" src="/etc/sidebar.js"></script>
         </nav>
-        <main>
-            <div id="tabs">
-                <button style="width: 210px;" class="tablinks" onclick="openTab(event, 'articles')" id="defaultOpen">Articles</button>
-                <button style="width: 210px;" class="tablinks" onclick="openTab(event, 'poetry')">Poetry</button>
-            </div>
-            <!--Articles-->
-            <div id="articles" class="tabcontent">
-                <h2>Articles</h2>
-                <ul>
-                    <li><h3><a href="/dreamie.html">That one Neocities user</a></h3>
-                    A look back at the bizarre dreamie drama, AKA the great Neocities war of 2022.</li>
-                    <li><h3><a href="/accessibility.html">Tips and tricks for Web accessibility</a></h3>
-                    Common accessibility mistakes and how to fix or work around them. Written with Webmasters who already have knowledge of HTML and CSS in mind.<br>
-                    <strong>Last major update: August 4th, 2023</strong></li>
-                </ul>
-            </div>
-            <!--Poetry-->
-            <div id="poetry" class="tabcontent">
-                <h2>Poetry</h2>
-                <ul>
-                    <li><h3><a href="/fundo.html"><span lang="pt">Fundo</span> + English translation</a></h3></li>
-                    <li><h3><a href="/the-king.html">The King</a></h3></li>
-                    <li><h3><a href="/the-fall.html">The fall</a></h3></li>
-                    <li><h3><a href="/world-at-war.html">World at war</a></h3></li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-            <p>© nobody cares / hand-coded</p>
-        </footer>
-    </div>
-    <script src="/etc/tabs.js"></script>
+        <img src="/images/decor/kirby-comp.gif"> ← me, typing this shit
+        <h3>Status of the now</h3>
+        <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=devils" defer></script>
+        <img src="/images/freebies/stamps/beelieve.png" class="center">
+    </aside>
+    <main>
+        <p>«Wow, I wonder what kind of things this <s>idiot</s> cool guy thinks about!» Well, wonder no more, dearest visitor! Below are all my written works, be they articles, reviews, or even poetry!</p>
+        <p>I try my best to stay coherent and make sense, but do keep in mind that might not always be the case.</p>
+        <!--Featured-->
+        <h2>Featured works</h2>
+        <h3><a href="/accessibility.html">Tips and trick for Web accessibility</a></h3>
+        <p>Common accessibility mistakes and how to fix or work around them. Written with Webmasters who already have knowledge of HTML and CSS in mind.<br>
+        <strong>Last major update: August 4th, 2023</strong></p>
+        <h3><a href="dreamie.html">That one Neocities user</a></h3>
+        <p>A look back at the bizarre dreamie drama, AKA the great Neocities war of 2022.</p>
+        <h3><a href="/theking.html">The King</a></h3>
+        <p>A poem about national trauma, ironically not written in my native language.</p>
+        <!--Else-->
+        <h2>Everything else</h2>
+        <h3><a href="/fundo.html"><span lang="pt">Fundo</span> + English translation</a></h3>
+        <p>A poem in Portuguese, and its English translation.</p>
+        <h3><a href="/thefall.html">The fall</a></h3>
+        <p>A poem dedicated to a friend whose name I don't remember.</p>
+        <h3><a href="/noodles.html">Instant noodle reviews</a></h3>
+        <p>Ever wanted overly in-depth reviews of instant noodles? No?<br>
+        <strong>Last major update: July 4th, 2023</strong></p>
+        <h3><a href="/worldatwar.html">World at war</a></h3>
+        <p>A poem about war and people's reactions to it.</p>
+    </main>
+    <footer>
+        <p><a href="/rss.xml">RSS</a> / <a href="https://yourdevilfriends.123guestbook.com/">guestbook</a> / <a href="credits.html">Credits</a></p>
+    </footer>
 </body>
 </html>

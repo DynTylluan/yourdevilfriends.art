@@ -2,28 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title></title>
+    <title>title</title>
 </head>
 <body>
-    <div id="contain">
-        <img src="/images/header.gif" id="kitty">
-        <header>
-            <h1>the devils' den</h1>
-        </header>
-        <nav>
-            <a href="/"><button>Home</button></a>
-            <a href="/art.html"><button>Art</button></a>
-            <a href="/writing.html"><button>Writing</button></a>
-            <a href="/fun.html"><button>Fun</button></a>
-            <a href="/links.html"><button>Links</button></a>
+    <header>
+        <h1><img src="/images/decor/cat.gif" style="margin-right: 10px;">Title</h1>
+    </header>
+    <aside>
+        <nav id="sidebar">
+            <script type="text/javascript" src="/etc/sidebar.js"></script>
         </nav>
-        <main>
-        </main>
-        <footer>
-            <p>© nobody cares / hand-coded</p>
-        </footer>
-    </div>
+    </aside>
+    <main></main>
+    <footer>
+        <p><a href="/rss.xml">RSS</a> / <a href="https://yourdevilfriends.123guestbook.com/">guestbook</a> / <a href="credits.html">Credits</a></p>
+    </footer>
 </body>
 </html>
